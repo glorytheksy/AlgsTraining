@@ -1,6 +1,6 @@
 package stack_and_queue;
 
-import java.util.LinkedList;
+import utils.Stack;
 
 public class GetMinStack extends Stack{
     
@@ -9,7 +9,7 @@ public class GetMinStack extends Stack{
     @Override
     public void push (Integer element) {
         if (null == element) {
-            throw new RuntimeException("²»ÔÊÐí¼ÓÈë¿ÕÔªËØ");            
+            throw new RuntimeException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½");            
         }        
         
         super.push(element);

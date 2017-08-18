@@ -1,4 +1,4 @@
-package stack_and_queue;
+package utils;
 
 import java.util.LinkedList;
 
@@ -27,7 +27,7 @@ public class Stack {
     
     public Integer peek() {
         if (0 == size){
-            throw new RuntimeException("长度为0");
+            throw new RuntimeException("锟斤拷锟斤拷为0");
         }
         return list.get(size - 1);         
     }
