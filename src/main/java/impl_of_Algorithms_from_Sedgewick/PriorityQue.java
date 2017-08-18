@@ -1,4 +1,4 @@
-package temp_package;
+package impl_of_Algorithms_from_Sedgewick;
 
 import java.util.LinkedList;
 
