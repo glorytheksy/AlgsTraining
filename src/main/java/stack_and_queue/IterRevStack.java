@@ -1,5 +1,6 @@
 package stack_and_queue;
 
+import utils.Stack;
 
 public class IterRevStack {
 

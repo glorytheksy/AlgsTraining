@@ -1,25 +1,27 @@
 package stack_and_queue;
 
+import utils.Stack;
+
 /**
  * 
  * @ClassName QuequeFrom2Stacks
- * @Description Á½¸öÕ»¹¹³ÉµÄ¶ÓÁÐ
- * @author Ò¶ÏþÃÉ
- * @Date 2017Äê8ÔÂ16ÈÕ ÉÏÎç8:07:30
+ * @Description ï¿½ï¿½ï¿½ï¿½Õ»ï¿½ï¿½ï¿½ÉµÄ¶ï¿½ï¿½ï¿½
+ * @author Ò¶ï¿½ï¿½ï¿½ï¿½
+ * @Date 2017ï¿½ï¿½8ï¿½ï¿½16ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½8:07:30
  * @version 1.0.0
  */
 public class QuequeFrom2Stacks {
     
-    // ÕýÐòÕ»
+    // ï¿½ï¿½ï¿½ï¿½Õ»
     private Stack normalOrder = new Stack();
-    // µ¹ÐòÕ»
+    // ï¿½ï¿½ï¿½ï¿½Õ»
     private Stack reverseOrder = new Stack();
-    // ³¤¶È
+    // ï¿½ï¿½ï¿½ï¿½
     private int size;
     
     /**
      * 
-     * @Description Ñ¹Èëelement
+     * @Description Ñ¹ï¿½ï¿½element
      * @param element
      */
     public void push(Integer element) {
@@ -28,7 +30,7 @@ public class QuequeFrom2Stacks {
     
     /**
      * 
-     * @Description Êä³ö×îÏÈ½ø¶ÓÁÐµÄÊý¾Ý
+     * @Description ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
      * @return
      */
     public Integer poll() {
