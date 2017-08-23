@@ -4,6 +4,18 @@ import java.util.LinkedList;
 
 public class Stack {
     
+    
+    public String getName() {
+        return name;
+    }
+
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    protected String name;
+    
     protected LinkedList<Integer> list = new LinkedList<Integer>();
     
     protected int size;

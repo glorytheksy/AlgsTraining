@@ -8,7 +8,7 @@ public class MyArrayList<T> {
     
     
     public MyArrayList() {
-        this.list = new T[0];
+//        this.list = new T[0];
     }
     
     
