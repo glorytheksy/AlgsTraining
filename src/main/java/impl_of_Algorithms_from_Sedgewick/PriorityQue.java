@@ -1,9 +1,16 @@
 package impl_of_Algorithms_from_Sedgewick;
 
 import java.util.LinkedList;
-
+/**
+ * 
+ * @ClassName PriorityQue
+ * @Description 优先队列（最大值在堆顶端）
+ * @author 叶晓蒙
+ * @Date 2017年8月24日 上午9:11:23
+ * @version 1.0.0
+ */
 public class PriorityQue {
-    // 存储数据数组
+    // 存储数据数组(第一个元素我们并不使用)
     private LinkedList<Integer> simHeap = new LinkedList<Integer>(){ {add(0);} }; 
     // 优先队列数据长度
     private int size = 0;
