@@ -25,31 +25,32 @@ public class NumOfSpecialSubArr {
         LinkedList<Integer> qmax = new LinkedList<Integer>();        
         int p1 = 0;
         int p2 = 0;
+        qmaxPush(list, qmax, 0);
+        qminPush(list, qmin, 0);
         
-        qmaxPush(list, qmax, p1);
-        qminPush(list, qmin, p2);
- 
-        while ( !(p1 == list.size() - 1 && p2 == list.size() - 1) ) {
+        while (p1 < list.size()) {
             int sub = list.get(qmax.getFirst()) - list.get(qmin.getFirst());
-
-            if (sub <= num && p2 < list.size() - 1) {
-                p2++;
-                qmaxPush(list, qmax, p2);
-                qminPush(list, qmin, p2);
-            }
-            else {
-                count = count + p2 - p1 + 1;
-                if (qmax.getFirst() == p1) {
-                    qmax.removeFirst();
+            
+            while( p2 < list.size() ) {                
+                if (sub <= num) {
+                    p2++;
+                    qmaxPush(list, qmax, p2);
+                    qminPush(list, qmin, p2);
+                } else {
+                    break;
                 }
-                if (qmin.getFirst() == p1) {
-                    qmin.removeFirst();
-                }                    
-                p1++;   
             }
+            count = count + p2 - p1;
+            if (qmax.getFirst() == p1) {
+                qmax.removeFirst();
+            }
+            if (qmin.getFirst() == p1) {
+                qmin.removeFirst();
+            }   
+            p1++;
         }
-        // 补足最后一次
-        return ++count;
+        
+        return count;
     }
     
     
