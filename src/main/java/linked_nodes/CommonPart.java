@@ -15,6 +15,12 @@ import utils.Node;
  */
 public class CommonPart {
     
+    /**
+     * 
+     * @Description 时间复杂度 O()
+     * @param head1
+     * @param head2
+     */
     public void solution(Node head1, Node head2) {
         if (null == head1 || null == head2) {
             throw new RuntimeException();

@@ -14,6 +14,13 @@ import java.util.List;
  */
 public class NumOfSpecialSubArr {
     
+    /**
+     * 
+     * @Description 双指针法是算法中经常用到一种方式（这应该不能算是策略 ^ ^）
+     * @param list
+     * @param num
+     * @return
+     */
     public int solution(List<Integer> list, int num) {
         int count = 0;
         
