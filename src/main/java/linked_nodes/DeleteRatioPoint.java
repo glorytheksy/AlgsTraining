@@ -12,21 +12,50 @@ import utils.Node;
  */
 public class DeleteRatioPoint {
     
-    public Node solution1(Node head) {
+    /**
+     * 
+     * @Description 求中间节点
+     * @param head
+     * @return
+     */
+    public void solution1(Node head) {
         if (null == head) {
             throw new RuntimeException();
         }
         
         Node p1 = head;
-        Node p2 = head;
-                
-        while (p1 != p2) {             
-            p2 = p2.getNext(); 
-            
+        Node p2 = null;
+        if (null != head.getNext()) {
+            p2 = head.getNext(); 
+        }            
+        else {
+            head = null;
+        }            
+        
+        while (null != p2.getNext() && null != p2.getNext().getNext()) {             
+            p2 = p2.getNext().getNext(); 
+            p1 = p1.getNext();
         }
+        p1.setNext(p1.getNext().getNext());
     }
 
-    public Node solution2(Node head) {
+    /**
+     * 
+     * @Description 求a/b处节点
+     * @param head
+     * @return
+     */
+    public Node solution2(Node head, int a, int b) {
+        if (null == head) {
+            throw new RuntimeException();
+        }
+        
+        if (a < 0 || b < 0 || a > b) {
+            throw new RuntimeException();
+        }
+        
+        
+        
         return null;
     }
     
