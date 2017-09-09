@@ -6,14 +6,13 @@ import java.util.List;
 public class BinaryNode {
 
     public int value;
-    
+
     public BinaryNode left;
-    
+
     public BinaryNode right;
 
     private int N; // 子节点数（包括自身）
-    
-    
+
     public BinaryNode() {
     }
 
@@ -37,73 +36,184 @@ public class BinaryNode {
         this.value = value;
     }
 
+    /**
+     * @Description 查找节点
+     * @param value
+     * @return
+     */
     public BinaryNode get(int value) {
-        
+
         if (value == this.getValue()) {
             return this;
         }
-        
+
         else if (value < this.getValue()) {
             return this.left.get(value);
         }
-        
+
         else {
             return this.right.get(value);
         }
     }
-    
-    private List<BinaryNode> route = new ArrayList<BinaryNode>();
-    
+
     /**
-     * @Description 插入二叉树（假设我们不允许又重复值）
+     * @Description 插入节点（假设我们不允许又重复值）
      * @param value
      * @return
      */
     public boolean put(int value) {
-        
-        
-                
+
         if (value == this.value) {
             return false;
         }
-        
+
         else if (value < this.value) {
-            
+
             if (null == this.left) {
                 this.left = new BinaryNode(value);
                 this.left.setSize(1);
                 return true;
-            }
-            else {
+            } else {
                 boolean rs = this.left.put(value);
                 if (true == rs) {
                     this.setSize(size(this.left) + size(this.right) + 1);
                 }
-                return rs;                
+                return rs;
             }
-        } 
-        
+        }
+
         else {
             if (null == this.right) {
                 this.right = new BinaryNode(value);
                 this.right.setSize(1);
                 return true;
-            }
-            else {
+            } else {
                 boolean rs = this.right.put(value);
                 if (true == rs) {
                     this.setSize(size(this.left) + size(this.right) + 1);
                 }
-                return rs;     
+                return rs;
             }
-        } 
+        }
     }
 
-    public static int size(BinaryNode node) {
+    /**
+     * 
+     * @Description 树的大小
+     * @param node
+     * @return
+     */
+    private int size(BinaryNode node) {
         if (node == null)
             return 0;
-        else 
+        else
             return node.getSize();
     }
     
+    /**
+     * 
+     * @Description 查找最小值，复杂度lgN
+     * @return
+     */
+    public BinaryNode min() {        
+        if (null == this.left) {
+            return this;
+        }        
+        return this.left.min();
+    }
+    
+    /**
+     * 
+     * @Description 查找最大值，复杂度lgN
+     * @return
+     */
+    public BinaryNode max() {
+        if (null == this.right) {
+            return this;
+        }        
+        return this.right.min();
+    }
+    
+        
+    /**
+     * 
+     * @Description 查找二叉查找树中的天花板节点
+     * @param data
+     * @return
+     */
+    public BinaryNode ceil(int data) {
+        return this.ceil(this, data);
+    }
+            
+    private BinaryNode ceil(BinaryNode root, int data) {        
+        if (null == root) return null;      
+        if (data == root.value) return root;
+        
+        else if (data < root.value) {
+            if (root.left.value < data) return root; 
+            else return ceil(root.left, data);
+        }
+        else {
+            if (root.right.value > data) return root.right; 
+            return ceil(root.right, data);
+        }
+    }
+    
+    /**
+     * 
+     * @Description 找到排名为k的元素（从大往小数）
+     * @param k
+     * @return
+     */
+    public BinaryNode select(int k) {
+        return this.select(this, k);
+    }
+    
+    private BinaryNode select(BinaryNode root, int k) {        
+        if (null == root || root.N < k || 0 >= k) {
+            return null;
+        }
+        
+        int t = size(root.right);        
+        if (k - 1 == t) {
+            return root;
+        } 
+        else if (k - 1 < t) {
+            return select(root.right, k);
+        }
+        else {
+            return select(root.left, k - t - 1);
+        }
+    }
+    
+    /**
+     * 
+     * @Description 节点的排名（从大往小）
+     * @param node
+     * @return
+     */
+    public int rank(BinaryNode node) {
+        return this.rank(this, node);
+    }
+    
+    private int rank(BinaryNode root, BinaryNode node) {        
+        if (null == node ) {
+            return -1;
+        }
+        if (null == root) {
+            throw new RuntimeException("");
+        }
+        
+        int t = size(root);
+        if (t == node.value) {
+            return size(root.right) + 1;
+        }
+        else if (t < node.value) {
+            return rank(root.right, node);
+        }
+        else {
+            return rank(root.left, node) + 1 + size(root.right);
+        }
+    }
+
 }
