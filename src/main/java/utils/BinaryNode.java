@@ -106,4 +106,66 @@ public class BinaryNode {
             return node.getSize();
     }
     
+    /**
+     * 
+     * @Description 删除最小节点（删除最大节点同理）
+     */
+    public BinaryNode delMin() {
+        return this.delMin_2(this);
+    }
+    
+    /**
+     * 
+     * @Description 删除最小节点（返回被删除的节点值）（有缺陷，原头节点会不知去向）
+     * @param root
+     * @return
+     */
+    private int delMin(BinaryNode root) {
+        if (null == root) {
+            throw new RuntimeException();
+        }
+
+        if (null != root.left && null == root.left.left) {
+            int rs = root.left.value;
+            root.left = root.left.right;            
+            root.N = size(root) - 1;
+            return rs;
+        }
+        
+        else if (null != root.left && null != root.left.left) {
+            int t = delMin(root.left);
+            root.N = size(root) - 1;
+            return t;
+        }
+        
+        else {
+            int t = root.value;
+            root = root.right;
+            return t;
+        }        
+    }
+    
+    /**
+     * 
+     * @Description 删除最小节点(只返回头结点)
+     * @param root
+     * @return
+     */
+    private BinaryNode delMin_2(BinaryNode root) {        
+        if (null == root.left) {
+            return root.right;
+        }
+        
+        else {
+            root.left = delMin_2(root.left);
+            root.N = size(root.left) + size(root.right) + 1;
+            return root;            
+        }
+    }
+    
+    
+//    private BinaryNode del(BinaryNode node) {
+//        
+//    }
+//    
 }
