@@ -56,4 +56,7 @@ public class MyArrayList<Item> {
         return this.list[index];
     }
 
+    public static void main(String[] args) {
+        System.out.println("hw");
+    }
 }
