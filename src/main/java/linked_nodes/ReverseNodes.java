@@ -16,7 +16,7 @@ public class ReverseNodes {
      * 
      * @Description 反转单链表
      * @param head
-     * @return
+     * @return one Node
      */
     public Node solution1(Node head) {
         if (null == head) {
