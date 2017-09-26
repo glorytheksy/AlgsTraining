@@ -1,8 +1,5 @@
 package utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class BinaryNode {
 
     public int value;
@@ -110,20 +107,39 @@ public class BinaryNode {
             return node.getSize();
     }
     
-    /**
-     * 
-     * @Description 查找最小值，复杂度lgN
-     * @return
-     */
-    public BinaryNode min() {        
-        if (null == this.left) {
-            return this;
-        }        
-        return this.left.min();
-    }
     
     /**
      * 
+     * @Description 删除最小节点（返回被删除的节点值）（有缺陷，原头节点会不知去向）
+     * @param root
+     * @return
+     */
+    private int delMin(BinaryNode root) {
+        if (null == root) {
+            throw new RuntimeException();
+        }
+
+        if (null != root.left && null == root.left.left) {
+            int rs = root.left.value;
+            root.left = root.left.right;            
+            root.N = size(root) - 1;
+            return rs;
+        }
+        
+        else if (null != root.left && null != root.left.left) {
+            int t = delMin(root.left);
+            root.N = size(root) - 1;
+            return t;
+        }
+        
+        else {
+            int t = root.value;
+            root = root.right;
+            return t;
+        }
+    }
+
+    /**
      * @Description 查找最大值，复杂度lgN
      * @return
      */
@@ -131,7 +147,18 @@ public class BinaryNode {
         if (null == this.right) {
             return this;
         }        
-        return this.right.min();
+        return this.right.max();
+    }
+    
+    /**
+     * @Description 查找最小值，复杂度lgN
+     * @return
+     */
+    public BinaryNode min() {
+        if (null == this.left) {
+            return this;
+        }        
+        return this.left.min();
     }
     
         
@@ -157,10 +184,37 @@ public class BinaryNode {
             if (root.right.value > data) return root.right; 
             return ceil(root.right, data);
         }
+
     }
     
     /**
      * 
+     * @Description 删除最小节点
+     * @return
+     */
+    public BinaryNode delMin() {
+        return this.delMin_2(this);
+    }
+    
+    /**
+     * 
+     * @Description 删除最小节点(只返回头结点)
+     * @param root
+     * @return
+     */
+    private BinaryNode delMin_2(BinaryNode root) {        
+        if (null == root.left) {
+            return root.right;
+        }
+        
+        else {
+            root.left = delMin_2(root.left);
+            root.N = size(root.left) + size(root.right) + 1;
+            return root;            
+        }
+    }
+    
+    /**
      * @Description 找到排名为k的元素（从大往小数）
      * @param k
      * @return
@@ -215,5 +269,47 @@ public class BinaryNode {
             return rank(root.left, node) + 1 + size(root.right);
         }
     }
+    
+    /**
+     * 
+     * @Description 删除节点
+     * @param node
+     * @return
+     */
+    public BinaryNode del(BinaryNode node) {
+        if (null == node) {
+            throw new RuntimeException();
+        }else {
+            return this.del(this, node);
+        }
+    }
+    
+    private BinaryNode del(BinaryNode root, BinaryNode node) {
+        if (null == root) return null;
+        
+        if (node.value == root.value) {
+            if (null != root.right) {
+                BinaryNode t = root.right.min();
+                root.right.delMin();
+                t.left = root.left;
+                t.right = root.right;
+                t.N = size(t.left) + size(t.right) + 1;                
+            }
+            else {
+                return root.left;
+            }
+        }
+
+        else if (node.value < root.value) {
+            root.left = del(root.left, node);
+        }
+        else {
+            root.right = del(root.right, node);
+        }                
+        root.N = size(root.left) + size(root.right) + 1;
+        return root;  
+    }
+
+
 
 }
