@@ -1,4 +1,4 @@
-package data_structure_self_impl;
+package java_data_structure_self_impl;
 
 import java.util.Collection;
 
