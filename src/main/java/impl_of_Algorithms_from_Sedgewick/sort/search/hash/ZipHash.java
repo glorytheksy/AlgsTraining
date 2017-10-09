@@ -10,9 +10,8 @@ package impl_of_Algorithms_from_Sedgewick.sort.search.hash;
  */
 public class ZipHash {
 
-    private int hashCode() {
-        
+    public int hashCode() {
+        return -1;
     }
-    
-    
+        
 }
