@@ -10,11 +10,24 @@ package impl_of_Algorithms_from_Sedgewick.sort.search.hash;
  */
 public class StringHash {
     
-    public static void main(String[] args) {
-        String s = "zadfdsaf";
-        s.charAt(2);
+    
+    public int hashCode(String s, int carry, int M) {
+        int hash = 0;
         
-        System.out.println(s.charAt(0));
+        for (int i = 0; i < s.length(); i++) {
+            hash = (carry * hash + s.charAt(i)) % M;
+        }
+        
+        return hash;
+        
+    }
+    
+    public static void main(String[] args) {
+        StringHash sh = new StringHash();
+        
+        System.out.println("sdfas".charAt(0));
+        
+        System.out.println(sh.hashCode("dswehrf", 10, 97));
     }
 
 }

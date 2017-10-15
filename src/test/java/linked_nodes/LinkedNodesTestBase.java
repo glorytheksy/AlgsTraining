@@ -22,10 +22,12 @@ public class LinkedNodesTestBase {
 
         Node pt = head;
         while (null != pt) {
-            System.out.println(pt.getValue());
+            System.out.print(pt.getValue() + " ");
+            
             pt = pt.getNext();
 
         }
+        System.out.println();
     }
       
     public Node initNode(String numLst) {

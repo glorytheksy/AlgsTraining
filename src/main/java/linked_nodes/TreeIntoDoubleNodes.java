@@ -1,6 +1,5 @@
 package linked_nodes;
 
-import edu.princeton.cs.algs4.Queue;
 import utils.BinaryNode;
 import utils.DEndNode;
 
@@ -56,9 +55,9 @@ public class TreeIntoDoubleNodes {
      * @param tree
      * @return
      */
-    public Queue<BinaryNode> solution2(BinaryNode tree) {
-        return null;
-    }
+//    public Queue<BinaryNode> solution2(BinaryNode tree) {
+//        return null;
+//    }
 
     
     
