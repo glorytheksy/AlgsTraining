@@ -1,7 +1,8 @@
 package binary_tree;
 
+import java.util.Stack;
+
 import utils.BinaryNode;
-import utils.Stack;
 
 /**
  * 
@@ -19,23 +20,15 @@ public class EnumBinaryTree {
      * 我们是可以自己实现的
      */
     
-    /**
+
+    /*
+     * 总体来说，很难找到递归转非递归(自建栈方式)实现的规律
      * 
-     * @Description 先序遍历递归法
      */
-    public void solution(BinaryNode root) {
-        if (null == root) {
-            System.out.println("树为空");
-            return;
-        }        
-        System.out.println(root.getValue());
-        this.solution(root.left);
-        this.solution(root.right);
-    }    
-        
+            
     /**
      * 
-     * @Description 先序遍历循环法
+     * @Description 先序遍历打印(中左右)
      * @param root
      */
     public void preTraverse(BinaryNode root) {
@@ -43,21 +36,23 @@ public class EnumBinaryTree {
         if (null == root) {
             System.out.println("树为空");
             return;
-        }        
-        
-        // 思路： 首先找到首个中左右都一次性放入栈中的这个节点（待完成）
-                
-        Stack ls = new Stack();
-        
-        BinaryNode pt = root;
-        
-        while (null != pt.left) {
-            ls.push(pt.getValue());
-            pt = pt.left;
+
         }
+        Stack<BinaryNode> s = new Stack<BinaryNode>();
+        BinaryNode cur = root;
+        s.push(cur);
         
-        while (null != pt.right) {
-            
+        /* 打印栈顶根节点， 压栈右左 */
+        while (!s.isEmpty()) {
+            cur = s.pop();
+            System.out.println(cur);            
+            if ( null != cur.right) {
+                s.push(cur.right);
+            }
+            if (null != cur.left) {
+                s.push(cur.left);
+            }
         }
     }
+    
 }

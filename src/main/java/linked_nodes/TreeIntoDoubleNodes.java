@@ -45,7 +45,28 @@ public class TreeIntoDoubleNodes {
             return mid;
     }
     
+    /**
+     * 
+     * @Description 方法2， 首先利用双端队列将树的内容按顺序存起来而不做链接操作，
+     *              待所有结果都存在队列里，在在队列内部尽心链接操作。先利用Queque结构掌握顺序信息，再链接操作
+     *              这样就规避了方法1的缺点（左结果再遍历一次）。
+     *              
+     *              时间限制，这里我们就不实现了
+     * @param tree
+     * @return
+     */
+//    public Queue<BinaryNode> solution2(BinaryNode tree) {
+//        return null;
+//    }
+
     
+    
+    /**
+     * 
+     * @Description 解决左结果需要返回尾节点的问题
+     * @param head
+     * @return
+     */
     private DEndNode getTail(DEndNode head) {
         
         if (null == head) {
