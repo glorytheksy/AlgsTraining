@@ -19,17 +19,34 @@ public class EnumBinaryTree {
      * 我们是可以自己实现的
      */
     
+    /**
+     * 
+     * @Description 先序遍历递归法
+     */
+    public void solution(BinaryNode root) {
+        if (null == root) {
+            System.out.println("树为空");
+            return;
+        }        
+        System.out.println(root.getValue());
+        this.solution(root.left);
+        this.solution(root.right);
+    }    
+        
+    /**
+     * 
+     * @Description 先序遍历循环法
+     * @param root
+     */
     public void preTraverse(BinaryNode root) {
         
         if (null == root) {
             System.out.println("树为空");
             return;
-        }
+        }        
         
-        
-        // 思路： 首先找到首个左中右都一次性放入栈中的这个节点（待完成）
-        
-        
+        // 思路： 首先找到首个中左右都一次性放入栈中的这个节点（待完成）
+                
         Stack ls = new Stack();
         
         BinaryNode pt = root;
