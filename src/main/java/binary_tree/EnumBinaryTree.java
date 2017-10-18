@@ -20,6 +20,7 @@ public class EnumBinaryTree {
      * 我们是可以自己实现的
      */
     
+
     /*
      * 总体来说，很难找到递归转非递归(自建栈方式)实现的规律
      * 
@@ -35,6 +36,7 @@ public class EnumBinaryTree {
         if (null == root) {
             System.out.println("树为空");
             return;
+
         }
         Stack<BinaryNode> s = new Stack<BinaryNode>();
         BinaryNode cur = root;
@@ -50,7 +52,7 @@ public class EnumBinaryTree {
             if (null != cur.left) {
                 s.push(cur.left);
             }
-        }        
+        }
     }
     
 }
