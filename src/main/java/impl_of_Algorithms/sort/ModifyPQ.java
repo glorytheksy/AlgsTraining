@@ -1,23 +1,22 @@
-package impl_of_Algorithms_from_Sedgewick.sort;
+package impl_of_Algorithms.sort;
 
+import java.util.HashMap;
 import java.util.LinkedList;
-/**
- * 
- * @ClassName GeneralPriorityQue
- * @Description 利用泛型泛化了优先队列
- * @author yxmfi
- * @Date 2017年8月27日 下午4:42:57
- * @version 1.0.0
- * @param <Key>
- */
-public class GeneralPriorityQue<Key extends Comparable<Key>> {
-        
+import java.util.Map;
+
+public class ModifyPQ <Key extends Comparable<Key>>{
+
+    
     // 存储数据数组(第一个元素我们并不使用)
     private LinkedList<Key> simHeap = new LinkedList<Key>() {{add(((Key[])new Comparable [1])[0]);}};
 
     // 优先队列数据长度
     private int size = 0;
     
+    // 元素索引哈希表
+    private Map<Integer, Key> referMap = new HashMap<Integer, Key>(); 
+    
+
     public LinkedList<Key> getSimHeap() {
         return simHeap;
     }
@@ -25,7 +24,6 @@ public class GeneralPriorityQue<Key extends Comparable<Key>> {
     public void setSimHeap(LinkedList<Key> simHeap) {
         this.simHeap = simHeap;
     }
-    
 
     public boolean isEmpty() {
         return (0 == size);
@@ -52,13 +50,6 @@ public class GeneralPriorityQue<Key extends Comparable<Key>> {
             sink(1);
         return rs;
     }
-    
-    
-    
-    
-    
-    
-    
 
     private void swim(int n) {
         if (size < n || n < 1) {
@@ -132,15 +123,16 @@ public class GeneralPriorityQue<Key extends Comparable<Key>> {
     private int maxIndex(int m, int n) {
         if (m > size || n > size) {
             throw new RuntimeException();
-        }        
+        }
         return (less(simHeap.get(n), simHeap.get(m))) ? m : n;
     }
 
     private boolean less(Key k1, Key k2) {
         return (k1.compareTo(k2) < 0);
     }
-    
+
     private boolean equal(Key k1, Key k2) {
         return (0 == (k1.compareTo(k2)));
     }
+    
 }

@@ -2,7 +2,7 @@ package impl_of_Algorithms_from_Sedgewick;
 
 import org.junit.Test;
 
-import impl_of_Algorithms_from_Sedgewick.sort.PriorityQue;
+import impl_of_Algorithms.sort.PriorityQue;
 
 public class TestPriorityQueque {
 
