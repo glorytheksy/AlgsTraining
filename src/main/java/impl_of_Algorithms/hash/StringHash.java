@@ -1,4 +1,4 @@
-package impl_of_Algorithms_from_Sedgewick.sort.search.hash;
+package impl_of_Algorithms.hash;
 
 /**
  * 

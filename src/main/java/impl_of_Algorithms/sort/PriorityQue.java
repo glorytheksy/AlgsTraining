@@ -1,29 +1,35 @@
-package impl_of_Algorithms_from_Sedgewick.sort;
+package impl_of_Algorithms.sort;
 
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
-public class ModifyPQ <Key extends Comparable<Key>>{
+/**
+ * @ClassName PriorityQue
+ * @Description 优先队列（最大值在堆顶端）
+ * @author 叶晓蒙
+ * @Date 2017年8月24日 上午9:11:23
+ * @version 1.0.0
+ */
+public class PriorityQue {
 
-    
     // 存储数据数组(第一个元素我们并不使用)
-    private LinkedList<Key> simHeap = new LinkedList<Key>() {{add(((Key[])new Comparable [1])[0]);}};
+    private LinkedList<Integer> simHeap = new LinkedList<Integer>() {
+
+        {
+            add(0);
+        }
+    };
 
     // 优先队列数据长度
     private int size = 0;
     
-    // 元素索引哈希表
-    private Map<Integer, Key> referMap = new HashMap<Integer, Key>(); 
-    
-
-    public LinkedList<Key> getSimHeap() {
+    public LinkedList<Integer> getSimHeap() {
         return simHeap;
     }
 
-    public void setSimHeap(LinkedList<Key> simHeap) {
+    public void setSimHeap(LinkedList<Integer> simHeap) {
         this.simHeap = simHeap;
     }
+    
 
     public boolean isEmpty() {
         return (0 == size);
@@ -33,17 +39,17 @@ public class ModifyPQ <Key extends Comparable<Key>>{
         return size;
     }
 
-    public void push(Key element) {
+    public void push(int element) {
         simHeap.add(element);
         size++;
         swim(size);
     }
 
-    public Key poll() {
+    public int poll() {
         if (size < 1) {
             throw new RuntimeException();
         }
-        Key rs = simHeap.set(1, simHeap.get(size));
+        int rs = simHeap.set(1, simHeap.get(size));
         simHeap.removeLast();
         size--;
         if (size >= 1)
@@ -56,7 +62,7 @@ public class ModifyPQ <Key extends Comparable<Key>>{
             throw new RuntimeException();
         }
 
-        if (less(simHeap.get(n), simHeap.get(getSuper(n))) || equal(simHeap.get(n), simHeap.get(getSuper(n)))) {
+        if (simHeap.get(getSuper(n)) >= simHeap.get(n)) {
             return;
         }
         exch(getSuper(n), n);
@@ -74,27 +80,28 @@ public class ModifyPQ <Key extends Comparable<Key>>{
 
         if ((n * 2) <= size && (n * 2 + 1) <= size) {
             int maxIndex = maxIndex(n * 2, n * 2 + 1);
-            if (less(simHeap.get(n), simHeap.get(maxIndex))) {
+            if (simHeap.get(maxIndex) > simHeap.get(n)) {
                 exch(maxIndex, n);
                 sink(maxIndex);
             }
         }
 
         else if ((n * 2) <= size) {
-            if (less(simHeap.get(n), simHeap.get(n * 2)) || equal(simHeap.get(n), simHeap.get(n * 2))) {
+            if (simHeap.get(n * 2) >= simHeap.get(n)) {
                 exch(2 * n, n);
                 sink(2 * n);
             }
         }
+
     }
 
     private void exch(int m, int n) {
         if (m > size || n > size) {
             throw new RuntimeException();
         }
-        Key t = simHeap.get(m);
-        simHeap.set(m, simHeap.get(n));
-        simHeap.set(n, t);
+        Integer t = simHeap.get(m);
+        simHeap.set(m, simHeap.get(n).intValue());
+        simHeap.set(n, t.intValue());
     }
 
     /**
@@ -124,15 +131,7 @@ public class ModifyPQ <Key extends Comparable<Key>>{
         if (m > size || n > size) {
             throw new RuntimeException();
         }
-        return (less(simHeap.get(n), simHeap.get(m))) ? m : n;
+        return (simHeap.get(m) > simHeap.get(n)) ? m : n;
     }
 
-    private boolean less(Key k1, Key k2) {
-        return (k1.compareTo(k2) < 0);
-    }
-
-    private boolean equal(Key k1, Key k2) {
-        return (0 == (k1.compareTo(k2)));
-    }
-    
 }
