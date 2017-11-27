@@ -19,7 +19,7 @@ public class DepthFirstPath {
     private boolean [] marked;
     private int count;
     // this is the tricky place!!! 到达某个点路径上的最后一个点 
-    private int [] lastButTow;
+    private int [] lastButTwo;
             
     public DepthFirstPath(MyGraph graph, int v) {
         if (null == graph || v < 0) {
@@ -31,11 +31,30 @@ public class DepthFirstPath {
         init(graph, v);
     }
     
+    public boolean hasPathTo(int d) {
+        return this.lastButTwo[d] != -1;
+    }
+    
+    public List<Integer> pathTo(int d) {        
+        if (!this.hasPathTo(d)) {
+            return null;
+        }
+        
+        List<Integer> rslst = new ArrayList<Integer>();
+        int temp = d;
+        while (temp != -1) {
+            rslst.add(this.lastButTwo[temp]);
+            temp = this.lastButTwo[temp];
+        }
+        return rslst;
+    }
+    
+    
     private void init(MyGraph graph, int v) {
         this.v = v;
-        this.lastButTow = new int [graph.getV()];
-        for (int i = 0; i < this.lastButTow.length; i++) {
-            this.lastButTow[i] = -1;
+        this.lastButTwo = new int [graph.getV()];
+        for (int i = 0; i < this.lastButTwo.length; i++) {
+            this.lastButTwo[i] = -1;
         }
         dfs(v);
         
@@ -47,28 +66,10 @@ public class DepthFirstPath {
         
         for (int e : this.graph.adj(s)) {
             if (false == this.marked[e]) {
-                this.lastButTow[e] = s;
+                this.lastButTwo[e] = s;
                 dfs(e);
             }
         }
-    }
-    
-    public boolean hasPathTo(int d) {
-        return this.lastButTow[d] != -1;
-    }
-    
-    public List<Integer> pathTo(int d) {        
-        if (!this.hasPathTo(d)) {
-            return null;
-        }
-        
-        List<Integer> rslst = new ArrayList<Integer>();
-        int temp = d;
-        while (temp != -1) {
-            rslst.add(this.lastButTow[temp]);
-            temp = this.lastButTow[temp];
-        }
-        return rslst;
     }
 
 }
