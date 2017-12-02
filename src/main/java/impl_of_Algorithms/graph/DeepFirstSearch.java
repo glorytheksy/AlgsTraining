@@ -12,7 +12,8 @@ public class DeepFirstSearch {
 
     private MyGraph graph;
     private boolean [] marked;
-    private int count;
+    // 遍历了多少点
+    private int count; 
         
     public DeepFirstSearch(MyGraph graph) {
         if (null == graph) {
@@ -23,6 +24,11 @@ public class DeepFirstSearch {
         this.count = 0;
     }
     
+    /**
+     * 
+     * @Description 由顶点s开始深度遍历所有连通着的点(由递归的方式实现)
+     * @param s
+     */
     public void dfs(int s) {
         this.marked[s] = true;
         this.count++;
@@ -44,7 +50,6 @@ public class DeepFirstSearch {
         DeepFirstSearch search = new DeepFirstSearch(g);
         search.dfs(0);
         System.out.println(search.getCount());
-    }
-    
+    }    
     
 }

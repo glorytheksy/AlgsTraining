@@ -2,8 +2,6 @@ package impl_of_Algorithms.graph;
 
 import java.util.HashSet;
 
-import org.apache.log4j.Logger;
-
 /**
  * 
  * @ClassName MyGraph
@@ -14,10 +12,11 @@ import org.apache.log4j.Logger;
  */
 public class MyGraph {
     
-    private Logger logger = Logger.getLogger(this.getClass());    
-
-    private int V;    
+    // 顶点数目
+    private int V;
+    // 边数目
     private int E;
+    // 每个点对应的毗邻点集合
     private HashSet<Integer> [] adj;
     
     /**
@@ -30,14 +29,12 @@ public class MyGraph {
         initAdj(v);        
     }
     
-    public int getV() {
-        return this.V;
-    }
-    
-    public int getE() {
-        return this.E;
-    }
-    
+    /**
+     * 
+     * @Description 连通两点
+     * @param v1
+     * @param v2
+     */
     public void addEdge(int v1, int v2) {
         if (v1 > this.V || v2 > this.V) {
             throw new RuntimeException("error");
@@ -50,11 +47,20 @@ public class MyGraph {
     public Iterable<Integer> adj(int v) {
         return this.adj[v];
     }
+        
+    public int getV() {
+        return this.V;
+    }
+    
+    public int getE() {
+        return this.E;
+    }
 
     /**
      * @Description 初始化邻接(v个顶点每个顶点的度为0)
      * @param v
      */
+    @SuppressWarnings("unchecked")
     private void initAdj(int v) {
         this.adj = new HashSet[v];
         for (int i = 0; i < v; i++) {

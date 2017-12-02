@@ -11,6 +11,7 @@ package impl_of_Algorithms.graph;
 public class MyGraphSearch {
 
     private MyGraph graph;
+    
     private int v;
     
     public MyGraphSearch(MyGraph graph, int v) {
@@ -40,6 +41,7 @@ public class MyGraphSearch {
      * @Description v的度
      * @return
      */
+    @SuppressWarnings("unused")
     public int count() {
         Iterable<Integer> adjIter = this.graph.adj(v);
         int count = 0;

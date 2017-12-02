@@ -28,13 +28,19 @@ public class DepthFirstPath {
         this.graph = graph;        
         this.marked = new boolean [graph.getV()];
         this.count = 0;
-        init(graph, v);
+        init();
     }
     
     public boolean hasPathTo(int d) {
         return this.lastButTwo[d] != -1;
     }
     
+    /**
+     * 
+     * @Description 到达定点d的路径
+     * @param d
+     * @return
+     */
     public List<Integer> pathTo(int d) {        
         if (!this.hasPathTo(d)) {
             return null;
@@ -49,15 +55,16 @@ public class DepthFirstPath {
         return rslst;
     }
     
-    
-    private void init(MyGraph graph, int v) {
-        this.v = v;
+    /**
+     * 
+     * @Description 初始化时深度搜索图形
+     */
+    private void init() {
         this.lastButTwo = new int [graph.getV()];
         for (int i = 0; i < this.lastButTwo.length; i++) {
             this.lastButTwo[i] = -1;
         }
-        dfs(v);
-        
+        dfs(v);        
     }
     
     private void dfs(int s) {
