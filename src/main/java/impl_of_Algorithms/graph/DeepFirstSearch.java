@@ -23,6 +23,11 @@ public class DeepFirstSearch {
         this.count = 0;
     }
     
+    /**
+     * 
+     * @Description 深度优先搜索，从s点出发
+     * @param s
+     */
     public void dfs(int s) {
         this.marked[s] = true;
         this.count++;
