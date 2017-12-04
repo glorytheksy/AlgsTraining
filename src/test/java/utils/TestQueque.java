@@ -5,16 +5,16 @@ import org.junit.Test;
 
 public class TestQueque {
     
-    Queque q = null;
+    Queue q = null;
 
     @Before
     public void init() {
-        q = new Queque();
-        q.push(0);
-        q.push(100);
-        q.push(10);
-        q.push(2);
-        q.push(7);
+        q = new Queue<Integer>();
+        q.add(0);
+        q.add(100);
+        q.add(10);
+        q.add(2);
+        q.add(7);
         
     }
     

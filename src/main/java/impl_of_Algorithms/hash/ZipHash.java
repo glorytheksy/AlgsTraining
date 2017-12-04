@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2017年9月30日 下午3:29:57
  * @version 1.0.0
  */
-public class ZipHash<T> {
+public class ZipHash<T> implements ImportantHashMethod<T> {
     
     private static final int DEFAULT_TABLE_SIZE = 37;
     
@@ -25,6 +25,7 @@ public class ZipHash<T> {
     }
     
     /**
+     * 插入元素时候从在链表头结点插入（因为新插的节点最有可能被查找）
      * 
      * @Description 插入元素
      * @param t
@@ -47,7 +48,15 @@ public class ZipHash<T> {
         
     }
     
-    public int myHash(T t) {
+    /**
+     * 算法，遍历链表数组即可
+     */
+    public boolean contains(T t) {
+        return false;
+    }
+    
+    
+    private int myHash(T t) {
         int hashValue = t.hashCode();
         
         hashValue = hashValue % DEFAULT_TABLE_SIZE;

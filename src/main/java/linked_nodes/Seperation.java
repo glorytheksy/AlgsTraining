@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import utils.Node;
-import utils.Queque;
+import utils.Queue;
 import utils.Stack;
 
 /**
@@ -33,17 +33,17 @@ public class Seperation {
             throw new RuntimeException();
         }
         
-        Queque smal = new Queque();
+        Queue<Integer> smal = new Queue<Integer>();
         Stack eql = new Stack();
-        Queque big = new Queque();
+        Queue<Integer> big = new Queue<Integer>();
         
         Node pt = head;
         
         while (null != pt) {
             if (sep > pt.getValue()) 
-                smal.push(pt.getValue());
+                smal.add(pt.getValue());
             else if (sep < pt.getValue())
-                big.push(pt.getValue());
+                big.add(pt.getValue());
             else 
                 eql.push(pt.getValue());            
             pt = pt.getNext();
