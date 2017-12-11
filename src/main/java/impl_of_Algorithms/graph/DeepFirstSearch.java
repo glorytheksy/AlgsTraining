@@ -25,7 +25,6 @@ public class DeepFirstSearch {
     }
     
     /**
-     * 
      * @Description 由顶点s开始深度遍历所有连通着的点(由递归的方式实现)
      * @param s
      */
