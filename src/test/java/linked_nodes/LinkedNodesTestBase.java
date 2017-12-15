@@ -2,6 +2,8 @@ package linked_nodes;
 
 
 import utils.Node;
+import zcy_linked_nodes.LinkedNodesUtils;
+
 /**
  * 
  * @ClassName LinkedNodesTestBase

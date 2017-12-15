@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import stack_and_queue.MaxTree;
 import utils.BinaryNode;
+import zcy_stack_and_queue.MaxTree;
 
 public class TestMaxTree {
     

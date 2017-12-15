@@ -2,8 +2,8 @@ package stack_and_queque;
 
 import org.junit.Test;
 
-import stack_and_queue.HanoVariation;
 import utils.Stack;
+import zcy_stack_and_queue.HanoVariation;
 
 public class TestHanoVariation {
 
