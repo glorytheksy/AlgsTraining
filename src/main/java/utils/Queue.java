@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
  * @Date 2017年9月4日 下午10:05:36
  * @version 1.0.0
  */
-public class Queue<E>{
+public class Queue<E> {
 
     protected LinkedList<E> list = new LinkedList<E>();
     
