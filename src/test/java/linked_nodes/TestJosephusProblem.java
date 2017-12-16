@@ -3,6 +3,7 @@ package linked_nodes;
 import org.junit.Test;
 
 import utils.Node;
+import zcy_linked_nodes.JosephusProblem;
 
 public class TestJosephusProblem {
     

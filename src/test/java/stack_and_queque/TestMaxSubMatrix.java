@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import stack_and_queue.MaxSubMaxtrix;
+import zcy_stack_and_queue.MaxSubMaxtrix;
 
 public class TestMaxSubMatrix {
 
