@@ -8,6 +8,9 @@ package data_structure_of_redis;
  * @Date 2017年9月27日 上午9:11:47
  * @version 1.0.0
  */
-public class SkipList {
+public class JumpList {
+    
+    
+    
 
 }
