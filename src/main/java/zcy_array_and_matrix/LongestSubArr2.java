@@ -15,20 +15,15 @@ public class LongestSubArr2 {
      *              比较tricky的地方是用 subSum = sum[i] - sum[j] 来表示子数组(i ~ j)的元素累加
      *              其中 sum[i] 是从0到i的元素累加
      *              
-     * 
-     * 
      * @param arr
      * @param given
      * @return
      */
     public int solution(int [] arr, int given) {
         
-        
-        
-        
+        return 0;
+                
     }
     
-    
-    
-    
+
 }

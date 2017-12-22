@@ -310,6 +310,10 @@ public class BinaryNode {
         return root;  
     }
 
+    @Override
+    public String toString() {
+        return this.value + "";
+    }
 
 
 }
