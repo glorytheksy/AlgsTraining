@@ -1,6 +1,6 @@
 package data_structure_of_redis;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
@@ -25,7 +25,7 @@ public class JumpList<T extends Comparable<T>> {
     private Random random;
     
     public JumpList() {
-        this.list = new ArrayList<Node<T>>();
+        this.list = new LinkedList<Node<T>>();
         random = new Random();
     }
     
