@@ -1,9 +1,5 @@
 package java_data_structure_self_impl;
 
-import java.util.Collection;
-
-import com.alibaba.dubbo.common.json.JSON;
-
 public class MyArrayList<Item> {
         
     private int curSize;
@@ -16,6 +12,7 @@ public class MyArrayList<Item> {
     
     private Item [] list;
         
+    @SuppressWarnings("unchecked")
     public MyArrayList() {
         /** 由于一些历史原因（详见http://www.cnblogs.com/scutwang/articles/3735219.html），
          *  java不支持泛型数组。所以不支持 list = new Item[20] 这种表达式
@@ -31,6 +28,7 @@ public class MyArrayList<Item> {
      *              赋值的几率会越来越小（数组大小是指数级增长）
      * @param item
      */
+    @SuppressWarnings("unchecked")
     public void add(Item item) {
         if (null == item) {
             throw new RuntimeException();
