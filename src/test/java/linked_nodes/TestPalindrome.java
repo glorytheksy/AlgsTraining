@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import utils.Node;
-import zcy_linked_nodes.Palindrome;
+import zcy.linked_nodes.Palindrome;
 
 public class TestPalindrome {
     

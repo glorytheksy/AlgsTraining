@@ -3,7 +3,7 @@ package linked_nodes;
 import org.junit.Test;
 
 import utils.Node;
-import zcy_linked_nodes.CommonPart;
+import zcy.linked_nodes.CommonPart;
 
 public class TestCommonPart {
 

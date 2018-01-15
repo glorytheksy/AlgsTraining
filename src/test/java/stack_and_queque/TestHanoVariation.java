@@ -3,7 +3,7 @@ package stack_and_queque;
 import org.junit.Test;
 
 import utils.Stack;
-import zcy_stack_and_queue.HanoVariation;
+import zcy.stack_and_queue.HanoVariation;
 
 public class TestHanoVariation {
 

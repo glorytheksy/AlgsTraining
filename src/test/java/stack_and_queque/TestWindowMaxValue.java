@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-import zcy_stack_and_queue.WindowMaxValue;
+import zcy.stack_and_queue.WindowMaxValue;
 
 public class TestWindowMaxValue {
 
