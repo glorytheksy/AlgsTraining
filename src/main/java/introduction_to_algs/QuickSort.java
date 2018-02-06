@@ -66,23 +66,8 @@ public class QuickSort {
      */
     public int randomPartition(int [] arr, int start, int end) {
         int realPivot = start + (int)Math.floor(Math.random() * (end - start + 1)) ;
-        exch(arr, start, realPivot);
-
-        int i = start;
-        int j = i + 1;
-        int pivot = start;
-        int x = arr[pivot];
-        
-        while (j <= end) {
-            if (arr[j] < x) {
-                i = i + 1;
-                exch(arr, i, j);
-            }
-            j++;
-        }
-        exch(arr, pivot, i);
-        return i;
-        
+        exch(arr, start, realPivot);        
+        return partition(arr, start, end);        
     }
     
     /**
