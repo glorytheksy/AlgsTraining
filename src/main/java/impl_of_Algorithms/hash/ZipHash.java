@@ -12,7 +12,7 @@ import java.util.List;
  * @Date 2017年9月30日 下午3:29:57
  * @version 1.0.0
  */
-public class ZipHash<T> implements ImportantHashMethod<T> {
+public class ZipHash<T> {
     
     private static final int DEFAULT_TABLE_SIZE = 37;
     
@@ -30,22 +30,18 @@ public class ZipHash<T> implements ImportantHashMethod<T> {
      * @Description 插入元素
      * @param t
      */
-    public void insert(T t) {
-        
-        int pos = this.myHash(t);
+    public void insert(T t) {        
+        int pos = this.h(t);
         
         if (zipLst.get(pos).isEmpty()) {
             zipLst.get(pos).add(t);
-        } else {
-            
+        } else {            
             List<T> origin = zipLst.get(pos);
             List<T> transformed  = new ArrayList<T>();
             transformed.add(t);
-            transformed.addAll(1, origin);
-            
+            transformed.addAll(1, origin);            
             zipLst.set(pos, transformed);
-        }
-        
+        }        
     }
     
     /**
@@ -55,10 +51,13 @@ public class ZipHash<T> implements ImportantHashMethod<T> {
         return false;
     }
     
-    
-    private int myHash(T t) {
-        int hashValue = t.hashCode();
-        
+    /**
+     * @Description 哈希方法
+     * @param t
+     * @return
+     */
+    private int h(T t) {
+        int hashValue = t.hashCode();        
         hashValue = hashValue % DEFAULT_TABLE_SIZE;
         
         if (hashValue < 0) {
