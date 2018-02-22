@@ -5,8 +5,10 @@ import org.junit.Test;
 
 public class TestQueque {
     
+    @SuppressWarnings("rawtypes")
     Queue q = null;
 
+    @SuppressWarnings("unchecked")
     @Before
     public void init() {
         q = new Queue<Integer>();
@@ -14,8 +16,7 @@ public class TestQueque {
         q.add(100);
         q.add(10);
         q.add(2);
-        q.add(7);
-        
+        q.add(7);        
     }
     
     @Test

@@ -1,5 +1,7 @@
 package impl_of_Algorithms.hash;
 
+import utils.CommonUtils;
+
 /**
  * 
  * @ClassName ProbingHash
@@ -9,7 +11,7 @@ package impl_of_Algorithms.hash;
  * @version 1.0.0
  * @param <T>
  */
-public class ProbingHash<T> {
+public class ProbeHash<T> {
     
     private static final int DEFAULT_TABLE_SIZE = 37;
     // 散列表
@@ -23,7 +25,7 @@ public class ProbingHash<T> {
      * @Description 构造函数
      */
     @SuppressWarnings("unchecked")
-    public ProbingHash() {
+    public ProbeHash() {
         this.probeList = (T [])new Object[DEFAULT_TABLE_SIZE];
         this.N = probeList.length;
         this.M = 0;
@@ -38,14 +40,13 @@ public class ProbingHash<T> {
             this.resize();
         }
         
-        int hash = t.hashCode() % N;
-        int i = hash;
-        for (; probeList[i] != null; i = (i + 1) % N ) {
-            if (probeList[i] == t) {
+        int pos = h(t, 0);
+        for (int i = 0; null != probeList[pos]; i++, pos = h(t, i)) {
+            if (t == probeList[pos]) {
                 return;
             }
         }
-        probeList[i] = t;        
+        probeList[pos] = t;        
     }
     
     /**
@@ -63,15 +64,17 @@ public class ProbingHash<T> {
      * @return
      */
     private T get(T t) {        
-        int hash = t.hashCode() % N;
-        for (int i = hash; probeList[i] != null; i = (i + 1) % N ) { // 为了在能让循环停止不要越界， "% N" 是必须加的
-            if (probeList[i] == t) {
+        for (int i = 0, pos = h(t, 0); null != probeList[pos]; i++, pos = h(t, i)) {
+            if (t == probeList[pos]) {
                 return t;
             }
         }
         return null;
     }
-    
+
+    /**
+     * @Description 长度倍增
+     */
     private void resize() {        
         @SuppressWarnings("unchecked")
         T [] newLst = (T [])new Object[2*M];
@@ -80,5 +83,28 @@ public class ProbingHash<T> {
         }
         M = M * 2;
         probeList = newLst;
+    }
+    
+    /**
+     * @Description 线性哈希
+     * @param t
+     * @param i
+     * @return
+     */
+    private int h(T t, int i) {
+        if (0 == i) {
+            return this.hash(t);
+        } else {
+            return (this.hash(t) + i) % N;
+        }
+    }
+    
+    /**
+     * @Description 基本哈希
+     * @param t
+     * @return
+     */
+    private int hash(T t) {
+        return t.hashCode() % N;
     }
 }
