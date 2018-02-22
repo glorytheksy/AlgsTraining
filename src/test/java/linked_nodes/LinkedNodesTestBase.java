@@ -2,7 +2,7 @@ package linked_nodes;
 
 
 import utils.Node;
-import zcy_linked_nodes.LinkedNodesUtils;
+import zcy.linked_nodes.LinkedNodesUtils;
 
 /**
  * 
