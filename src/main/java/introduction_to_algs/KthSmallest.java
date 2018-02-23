@@ -2,38 +2,36 @@ package introduction_to_algs;
 
 /**
  * 
- * @ClassName QuickSort
- * @Description 快速排序
- * @author 叶晓蒙
- * @Date 2018年2月5日 下午5:30:11
+ * @ClassName KthSmallest
+ * @Description find the k th smallest element in an array
+ * @author yxmfight
+ * @Date 2018年2月23日 下午5:50:53
  * @version 1.0.0
  */
-public class QuickSort {
-    
-    /**
-     * divide: partition
-     * conquer: 递归
-     * combine: 不需要combine
-     */    
-    public void quickSort(int [] a) {        
-        quickSort(a, 0, a.length - 1);                
-    }
-        
-    private void quickSort(int [] a, int start, int end) {
-        if (start == end) {
-            return;
-        }        
-        int i = randomPartition(a, start, end);
-        if (i - 1 > start) {
-            quickSort(a, start, i - 1);
-        }
-        if (end > i + 1) {
-            quickSort(a, i + 1, end);
-        }
-    }
+public class KthSmallest {
     
     /**
      * 
+     * @Description 找出arr内部start与end之间排名第k的元素
+     * @param arr
+     * @param start
+     * @param end
+     * @param k
+     */
+    public int solution(int [] arr, int start, int end, int k) {
+        
+        int pos = this.randomPartition(arr, start, end);
+        if (start + k - 1 == pos) {
+            return arr[pos];
+        } else if (start + k - 1 < pos) {
+            return solution(arr, start, pos, k);
+        } else {
+            return solution(arr, pos, end, k - pos + 1);
+        }
+        
+    }
+    
+    /**
      * @Description 以第一个元素为pivot来partition
      * @param arr
      * @param start
@@ -83,14 +81,10 @@ public class QuickSort {
     }
     
     public static void main(String[] args) {
-//        QuickSort qs = new QuickSort();        
-//        int arr[] = new int [] {7,1,4,5,10,6};
-//        ;
-//        System.out.println(qs.randomPartition(arr, 0, 5));
-//        System.out.println();
-//        for (int e :arr) {
-//            System.out.println(e);
-//        }        
+        KthSmallest test = new KthSmallest();
+        
+        int [] arr = new int [] {7,6,5,4,3,2,1};
+        System.out.println(test.solution(arr, 0, 6, 3));
+        
     }
-    
 }

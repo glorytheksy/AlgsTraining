@@ -47,6 +47,15 @@ public class MergeSort {
 
     }
     
+    /**
+     * 
+     * @Description 合并已经排好序的两个序列
+     * @param arr
+     * @param temp
+     * @param left
+     * @param right
+     * @param split
+     */
     private void merge(int [] arr, int [] temp, int left, int right, int split) {                            
         int i = left;
         int j = split;
@@ -64,8 +73,7 @@ public class MergeSort {
                 }
             }
             k++;
-        }
-        
+        }        
         
         for (i = left; i <= right; i++) {
             arr[i] = temp[i];
