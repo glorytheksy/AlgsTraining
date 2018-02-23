@@ -18,4 +18,10 @@ public class CommonUtils {
         return a<b?a:b;
     }
     
+    public static int mod(int x, int y) {
+                
+        double quotient = new Double(x).doubleValue() / new Double(y).doubleValue(); 
+        return x - y * new Double(Math.floor(quotient)).intValue();
+    }
+    
 }
