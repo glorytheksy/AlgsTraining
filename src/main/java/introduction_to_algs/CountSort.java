@@ -44,8 +44,6 @@ public class CountSort {
         for (int e :a) {
             System.out.println(e);
         }
-        
-        
     }
     
 }
