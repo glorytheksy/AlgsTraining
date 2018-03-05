@@ -13,6 +13,7 @@ import java.util.LinkedList;
 public class GeneralPriorityQue<Key extends Comparable<Key>> {
         
     // 存储数据数组(第一个元素我们并不使用)
+    @SuppressWarnings({"unchecked", "serial" })
     private LinkedList<Key> simHeap = new LinkedList<Key>() {{add(((Key[])new Comparable [1])[0]);}};
 
     // 优先队列数据长度

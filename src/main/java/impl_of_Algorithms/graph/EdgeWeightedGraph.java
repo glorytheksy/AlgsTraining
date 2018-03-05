@@ -15,10 +15,12 @@ public class EdgeWeightedGraph {
 
     private final int V;
     
+    @SuppressWarnings("unused")
     private int E;
     
     private HashSet<Edge>[] adj;
     
+    @SuppressWarnings("unchecked")
     public EdgeWeightedGraph(int V) {
         this.V = V;
         this.E = 0;

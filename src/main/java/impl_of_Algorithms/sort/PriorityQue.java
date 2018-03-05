@@ -12,6 +12,7 @@ import java.util.LinkedList;
 public class PriorityQue {
 
     // 存储数据数组(第一个元素我们并不使用)
+    @SuppressWarnings({"serial" })
     private LinkedList<Integer> simHeap = new LinkedList<Integer>() {
 
         {
