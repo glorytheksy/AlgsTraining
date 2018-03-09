@@ -1,4 +1,5 @@
-package zcy_binary_tree;
+package zcy.binary_tree;
+
 
 import utils.BinaryNode;
 
