@@ -11,11 +11,10 @@ package commonly_used_intervew_problems.sorting;
 public class MergeSortUpward {
 
     /**
-     * 普通的归并排序需要额外的N空间存储临时元素
-     * 而自底向上的可以解决这个问题
+     * 
+     * 
      */
     public void mergeSort(int [] arr) {
-        
         
         
         
