@@ -31,7 +31,7 @@ public class DirectedCycle {
     private boolean hasCycle;
     
     // TODO 这里要改成有向图类
-    public DirectedCycle(MyGraph graph, int v) {
+    public DirectedCycle(Graph graph, int v) {
         this.marked = new boolean[graph.getV()];
         for (int i = 0; i < this.lastButTwo.length; i++) {
             this.lastButTwo[i] = -1;
@@ -41,7 +41,7 @@ public class DirectedCycle {
         
     }
     
-    private void dfs(MyGraph graph, int v) {
+    private void dfs(Graph graph, int v) {
         this.marked[v] = true;
         // 进栈
         this.onStack[v] = true;

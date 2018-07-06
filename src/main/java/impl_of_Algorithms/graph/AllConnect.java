@@ -16,7 +16,7 @@ public class AllConnect {
     // 顶点属于哪一个"边"群
     private int id[];
         
-    public AllConnect(MyGraph graph) {
+    public AllConnect(Graph graph) {
         this.marked = new boolean[graph.getV()];
         this.count = 0;
         this.id = new int[graph.getV()];
@@ -42,7 +42,7 @@ public class AllConnect {
      * @Description 初始化连通分量
      * @param graph
      */
-    private void init(MyGraph graph) {        
+    private void init(Graph graph) {        
         for (int i = 0; i < graph.getV(); i++) {
             this.dfs(graph, i);
             count++;
@@ -55,7 +55,7 @@ public class AllConnect {
      * @param graph
      * @param s
      */
-    private void dfs(MyGraph graph, int s) {
+    private void dfs(Graph graph, int s) {
         this.marked[s] = true;
         // 顺带着把所属"边"群设置一下
         this.id[s] = count;

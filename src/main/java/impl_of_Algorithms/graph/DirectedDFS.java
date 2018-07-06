@@ -13,18 +13,18 @@ public class DirectedDFS {
     private boolean [] marked; 
     
     
-    public DirectedDFS(MyDigraph graph, int s) {
+    public DirectedDFS(Digraph graph, int s) {
         dfs(graph, s);
     }
     
     
-    public DirectedDFS(MyDigraph graph, Iterable<Integer> sources) {
+    public DirectedDFS(Digraph graph, Iterable<Integer> sources) {
         for (int e : sources) {
             dfs(graph, e);
         }
     }
     
-    private void dfs(MyDigraph graph, int v) {
+    private void dfs(Digraph graph, int v) {
         this.marked[v] = true;
         for (int e : graph.adj(v)) {
             if (false == this.marked[e]) {

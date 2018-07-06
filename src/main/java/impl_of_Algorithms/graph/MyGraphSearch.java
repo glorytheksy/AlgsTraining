@@ -10,11 +10,11 @@ package impl_of_Algorithms.graph;
  */
 public class MyGraphSearch {
 
-    private MyGraph graph;
+    private Graph graph;
     
     private int v;
     
-    public MyGraphSearch(MyGraph graph, int v) {
+    public MyGraphSearch(Graph graph, int v) {
         if (null == graph || v < 0) {
             throw new RuntimeException("error");
         }
