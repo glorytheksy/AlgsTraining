@@ -51,7 +51,7 @@ public class BFS {
     
     /**
      * 
-     * @Description 深度优先搜索(老的遍历过的点出来，新的进去，所以用队列)
+     * @Description 广度优先搜索(老的遍历过的点出来，新的进去，所以用队列)
      *              注意老的出队列的次序(很棒的算法！)
      * @param graph
      */
