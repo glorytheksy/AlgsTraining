@@ -12,7 +12,7 @@ public class BinaryNode {
 
     public BinaryNode() {
     }
-
+    
     public BinaryNode(int value) {
         this.value = value;
     }
@@ -315,5 +315,32 @@ public class BinaryNode {
         return this.value + "";
     }
 
+    public static void preTraverse(BinaryNode head) {        
+        if (null == head) {
+            return;
+        }
+        System.out.println(head.value);
+        preTraverse(head.left);
+        preTraverse(head.right);
+    }
+    
+    public static void midTraverse(BinaryNode head) {
+        if (null == head) {
+            return;
+        }
+        midTraverse(head.left);
+        System.out.println(head.value);
+        midTraverse(head.right);
+    }
+    
+    public static void postTraverse(BinaryNode head) {
+        if (null == head) {
+            return;
+        }
+        postTraverse(head.left);
+        postTraverse(head.right);
+        System.out.println(head.value);
+    }
+    
 
 }
