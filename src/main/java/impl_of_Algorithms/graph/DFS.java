@@ -8,14 +8,14 @@ package impl_of_Algorithms.graph;
  * @Date 2017年11月24日 下午6:14:20
  * @version 1.0.0
  */
-public class DeepFirstSearch {
+public class DFS {
 
-    private MyGraph graph;
+    private Graph graph;
     private boolean [] marked;
     // 遍历了多少点
     private int count; 
         
-    public DeepFirstSearch(MyGraph graph) {
+    public DFS(Graph graph) {
         if (null == graph) {
             throw new RuntimeException("error");
         }
@@ -44,9 +44,9 @@ public class DeepFirstSearch {
     }
     
     public static void main(String[] args) {
-        MyGraph g = new MyGraph(2);
+        Graph g = new Graph(2);
         g.addEdge(0, 1);
-        DeepFirstSearch search = new DeepFirstSearch(g);
+        DFS search = new DFS(g);
         search.dfs(0);
         System.out.println(search.getCount());
     }    

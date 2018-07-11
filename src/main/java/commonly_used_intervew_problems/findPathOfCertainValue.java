@@ -14,7 +14,10 @@ import utils.BinaryNode;
  */
 public class findPathOfCertainValue {
 
-    public Stack<BinaryNode> findPath(BinaryNode head, int target) {        
+    public Stack<BinaryNode> findPath(BinaryNode head, int target) {      
+        if (null == head) {
+            return null;
+        }
         Stack<BinaryNode> stack = new Stack<BinaryNode>();
         int stackSum = 0;
         if(findPath(head, target, stack, stackSum)) {
@@ -24,6 +27,15 @@ public class findPathOfCertainValue {
         }
     }
     
+    /**
+     * 
+     * @Description head为头的二叉树是否存在和为 target - stackSum 的路径
+     * @param head
+     * @param target
+     * @param stack 存储路径的节点
+     * @param stackSum
+     * @return
+     */
     private boolean findPath(BinaryNode head, int target, Stack<BinaryNode> stack, int stackSum) {
         boolean rs = false;
         if (null == head) {
@@ -52,6 +64,12 @@ public class findPathOfCertainValue {
         return rs;
     }
     
+    /**
+     * 
+     * @Description 移除栈内的点一直到 head
+     * @param stack
+     * @param head
+     */
     private void rmvExtra(Stack<BinaryNode> stack, BinaryNode head) {
         if (null == head) {
             return;

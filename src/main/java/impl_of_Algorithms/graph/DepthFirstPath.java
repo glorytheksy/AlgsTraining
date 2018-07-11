@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class DepthFirstPath {
     
-    private MyGraph graph;
+    private Graph graph;
     // 起点
     private int v;
     private boolean [] marked;
@@ -21,7 +21,7 @@ public class DepthFirstPath {
     // this is the tricky place!!! 到达某个点路径上的最后一个点 
     private int [] lastButTwo;
             
-    public DepthFirstPath(MyGraph graph, int v) {
+    public DepthFirstPath(Graph graph, int v) {
         if (null == graph || v < 0) {
             throw new RuntimeException("error");
         }

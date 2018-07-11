@@ -4,26 +4,26 @@ import java.util.HashSet;
 
 /**
  * 
- * @ClassName MyGraph
- * @Description 无向图的实现
+ * @ClassName Digraph
+ * @Description 有向图自实现
  * @author 叶晓蒙
- * @Date 2017年11月24日 下午4:28:28
+ * @Date 2017年12月4日 下午7:46:32
  * @version 1.0.0
  */
-public class MyGraph {
-    
+public class Digraph {
+
     // 顶点数目
     private final int V;
-    // 边数目
+    // 边数目(这里指一条有向边)
     private int E;
-    // 每个点对应的毗邻点集合
+    // 每个点对应的毗邻点集合(定点指向的)
     private HashSet<Integer> [] adj;
     
     /**
      * @Description 初始化具有v个顶点没有边的图
      * @param v
      */
-    public MyGraph(int v) {
+    public Digraph(int v) {
         this.V = v;
         this.E = 0;
         initAdj(v);        
@@ -31,7 +31,7 @@ public class MyGraph {
     
     /**
      * 
-     * @Description 连通两点
+     * @Description 连通两点(由v1指向v2)
      * @param v1
      * @param v2
      */
@@ -40,8 +40,22 @@ public class MyGraph {
             throw new RuntimeException("error");
         }
         adj[v1].add(v2);
-        adj[v2].add(v1);
         E++;
+    }
+    
+    /**
+     * 
+     * @Description 获取反向图
+     * @return
+     */
+    public Digraph reverse() {
+        Digraph rs = new Digraph(this.V);
+        for (int i = 0; i < this.V; i++) {
+             for (int e : adj[i]) {
+                 rs.addEdge(e, i);
+             }
+        }
+        return rs;
     }
     
     public Iterable<Integer> adj(int v) {
@@ -55,7 +69,7 @@ public class MyGraph {
     public int getE() {
         return this.E;
     }
-
+        
     /**
      * @Description 初始化邻接(v个顶点每个顶点的度为0)
      * @param v
@@ -67,5 +81,4 @@ public class MyGraph {
             adj[i] = new HashSet<Integer>();
         }
     }
-    
 }

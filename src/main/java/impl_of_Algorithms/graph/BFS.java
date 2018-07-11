@@ -19,7 +19,7 @@ public class BFS {
     // 起点
     private int v; 
             
-    public BFS(MyGraph graph, int v) {
+    public BFS(Graph graph, int v) {
         this.marked = new boolean[graph.getV()];
         this.lastButTwo = new int[graph.getV()];        
         bfs(graph);
@@ -51,11 +51,11 @@ public class BFS {
     
     /**
      * 
-     * @Description 深度优先搜索(老的遍历过的点出来，新的进去，所以用队列)
+     * @Description 广度优先搜索(老的遍历过的点出来，新的进去，所以用队列)
      *              注意老的出队列的次序(很棒的算法！)
      * @param graph
      */
-    private void bfs(MyGraph graph) {
+    private void bfs(Graph graph) {
         Queue<Integer> que = new Queue<Integer>();
         this.marked[v] = true;        
         que.add(v);        
