@@ -38,9 +38,7 @@ public class Permutation {
             return;
         }
         
-        for (int i = pos; i < arr.length; i++) {      
-            
-            
+        for (int i = pos; i < arr.length; i++) {            
             permutation(arr, pos + 1);            
             swap(arr, pos, arr.length - 1 - i);
         }                        
