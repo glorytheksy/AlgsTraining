@@ -45,11 +45,30 @@ public class BitWiseOperation {
         }
         return count;
     }
+    
+    public static double f(int n, int s) {
+        if (s < n || s > n * 6) {
+            return 0;
+        }
+        if (n == 1) {
+            return 1d/6d;
+        }
+        if (s == n) {
+            return 1d/Math.pow(6d, new Double(n));
+        }
+        if (s == n * 6) {
+            return 1d/Math.pow(6d, new Double(n));
+        }
+        
+        return f(n - 1, s - 1)/6d + f(n - 1, s - 2)/6d + f(n - 1, s - 3)/6d + f(n - 1, s - 4)/6d + f(n - 1, s - 5)/6d + f(n - 1, s - 6)/6d; 
+        
+    }
         
     public static void main(String[] args) {
-        BitWiseOperation bo = new BitWiseOperation();
-        bo.test();
-        System.out.println(bo.oneCount(14));
+//        BitWiseOperation bo = new BitWiseOperation();
+//        bo.test();
+//        System.out.println(bo.oneCount(14));
+        System.out.println(f(2,9));
     }
     
 }
