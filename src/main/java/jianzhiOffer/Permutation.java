@@ -15,11 +15,20 @@ public class Permutation {
     }
     
     private void permutation(int [] a, int pos) {
+        if (pos ==  a.length - 1) {
+            print(a);
+            return;
+        }
         
+        permutation()
+                
         
-        
-        
-        
+    }
+    
+    private void print(int [] a) {
+        for (int e : a) {
+            System.out.print(e);
+        }
     }
             
 }
