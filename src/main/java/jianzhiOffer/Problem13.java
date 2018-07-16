@@ -33,8 +33,21 @@ public class Problem13 {
             pt_1.setNext(pt_2.getNext());
         } else {
             pt_1.setNext(null);
-        }        
+        }                
+    }
+    
+    public static void deleteNode2(Node head, Node node) {
+        if (null == head || null == node) {
+            return;
+        }
         
+        if (null == node.getNext()) {
+            deleteNode(head, node);
+            return;
+        }
+                
+        node.setValue(node.getNext().getValue());
+        node.setNext(node.getNext().getNext());
     }
     
     

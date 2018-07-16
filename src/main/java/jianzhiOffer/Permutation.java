@@ -1,5 +1,7 @@
 package jianzhiOffer;
 
+import commonly_used_intervew_problems.sorting.SortUtils;
+
 /**
  * @ClassName Permutation
  * @Description 
@@ -9,26 +11,37 @@ package jianzhiOffer;
  */
 public class Permutation {
 
-    public void solution(int [] a) {
-        
-        
+    public static void solution(int [] a) {
+        if (null == a) {
+            throw new RuntimeException("input is null!");
+        }
+        permutation(a, 0);        
     }
     
-    private void permutation(int [] a, int pos) {
-        if (pos ==  a.length - 1) {
+    private static void permutation(int [] a, int pos) {
+        if (pos ==  a.length) {
             print(a);
             return;
         }
         
-        permutation()
-                
         
+        for (int i = pos; i < a.length; i++) {
+            SortUtils.exch(a, pos, i);
+            permutation(a, pos + 1);
+            SortUtils.exch(a, pos, i);
+        }
     }
     
-    private void print(int [] a) {
+    private static void print(int [] a) {
         for (int e : a) {
-            System.out.print(e);
+            System.out.print(e);            
         }
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+        int a [] = new int [] {1,2,3,4};
+        solution(a);
     }
             
 }
