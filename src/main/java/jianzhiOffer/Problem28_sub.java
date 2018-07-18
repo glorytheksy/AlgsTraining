@@ -1,5 +1,7 @@
 package jianzhiOffer;
 
+import com.alibaba.dubbo.common.utils.StringUtils;
+
 /**
  * 
  * @ClassName Problem28_sub
@@ -10,42 +12,27 @@ package jianzhiOffer;
  */
 public class Problem28_sub {
     
-    public static void combo(String prefix, String s) {
-      int N = s.length();
-
-      System.out.println(prefix);
-
-      for (int i = 0 ; i < N ; i++)
-        combo(prefix + s.charAt(i), s.substring(i+1));
-    }
-    
-
-    
-    public static void solution(char [] a, int start, int ) {
-        int N = a.length - start;
-        print(a, start);
+    public static void solution(char [] a) {
+        if (null == a) {
+            throw new RuntimeException("");
+        }
         
-        for (int i = 1 ; i < N ; i++) {
-            exch(a, start + 1, start + i);            
-            solution(a, )
+        combine("", a, 0);    
+    }
+    
+    private static void combine(String temp, char [] a, int start) {
+        if (!StringUtils.isEmpty(temp)) {
+            System.out.println(temp);
+        }
+                          
+        for (int i = start ; i < a.length ; i++) {
+            combine(temp + a[i], a, i + 1);
         }
     }
-    
-    private static void print(char [] a, int end) {
-        for (int i = 0; i <= end; i++) {
-            System.out.print(a[i]);
-        }
-        System.out.println();
-    }
-    
-    private static void exch(char [] a, int p1, int p2) {
-        char x = a[p1];
-        a[p1] = a[p2];
-        a[p2] = x;        
-    }
-    
+        
     public static void main(String[] args) {
-        
+        char [] a = new char [] {'1','2','3', '4'};
+        solution(a);
     }
         
 }
