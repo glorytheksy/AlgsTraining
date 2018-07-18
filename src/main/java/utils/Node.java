@@ -49,6 +49,15 @@ public class Node {
     public void setNext(Node next) {
         this.next = next;
     }
+    
+    public void print() {
+        System.out.println(this.value);
+        Node temp = this.next;
+        while (null != temp) {
+            System.out.println(temp.getValue());
+            temp = temp.next;
+        }
+    }
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
@@ -59,11 +68,7 @@ public class Node {
         list.add(5);
         
         Node node = new Node(list);
-        Node head = node;
-        while (null != head) {
-            System.out.println(head.getValue());
-            head = head.next;
-        }
+        node.print();
     }
     
 }
