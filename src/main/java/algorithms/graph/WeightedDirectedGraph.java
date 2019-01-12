@@ -10,14 +10,14 @@ import java.util.List;
  * @Date 2018年3月5日 下午3:14:38
  * @version 1.0.0
  */
-public class EdgeWeightedDigraph {
+public class WeightedDirectedGraph {
     
     private List<Edge>[] adj; // 邻接表矩阵  
     private int V; // 点的数目  
     private int E; // 边的数目  
       
     @SuppressWarnings("unchecked")
-    public EdgeWeightedDigraph(int V) {  
+    public WeightedDirectedGraph(int V) {  
         this.V = V;  
         E = 0;  
         adj = (List<Edge>[]) new List[V];  

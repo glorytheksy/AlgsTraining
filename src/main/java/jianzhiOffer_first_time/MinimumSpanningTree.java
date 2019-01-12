@@ -1,6 +1,6 @@
 package jianzhiOffer_first_time;
 
-import algorithms.graph.EdgeWeightedGraph;
+import algorithms.graph.WeightedGraph;
 
 /**
  * @ClassName MinimumSpanningTree
@@ -11,7 +11,7 @@ import algorithms.graph.EdgeWeightedGraph;
  */
 public class MinimumSpanningTree {
     
-    public void prim(EdgeWeightedGraph graph) {
+    public void prim(WeightedGraph graph) {
         
         
         

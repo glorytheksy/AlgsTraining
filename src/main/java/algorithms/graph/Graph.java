@@ -11,7 +11,7 @@ import java.util.HashSet;
  */
 public class Graph {
     
-    // 顶点数目
+    // 顶点数目(顶点英文： vertex)
     private final int V;
     // 边数目
     private int E;
@@ -23,6 +23,9 @@ public class Graph {
      * @param v
      */
     public Graph(int v) {
+        if (0 >= v) {
+            throw new RuntimeException();
+        }
         this.V = v;
         this.E = 0;
         initAdj(v);        
@@ -37,6 +40,10 @@ public class Graph {
         if (v1 > this.V || v2 > this.V) {
             throw new RuntimeException("error");
         }
+        if (this.adj[v1].contains(v2)) {
+            return;
+        }
+        
         adj[v1].add(v2);
         adj[v2].add(v1);
         E++;
@@ -53,6 +60,12 @@ public class Graph {
     public int getE() {
         return this.E;
     }
+    
+    public void pirnt() {
+        for (HashSet<Integer> v : adj) {
+            System.out.println(v);
+        }            
+    }
 
     /**
      * @Description 初始化邻接(v个顶点每个顶点的度为0)
@@ -64,6 +77,19 @@ public class Graph {
         for (int i = 0; i < v; i++) {
             adj[i] = new HashSet<Integer>();
         }
+    }
+    
+    public static void main(String[] args) {
+        Graph g = new Graph(5);
+        
+        g.addEdge(0 , 2);
+        g.addEdge(0 , 3);
+        g.addEdge(2 , 3);
+        g.addEdge(2 , 4);
+        g.addEdge(1 , 2);
+        
+        g.pirnt();
+               
     }
     
 }

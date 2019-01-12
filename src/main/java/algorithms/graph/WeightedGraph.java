@@ -11,7 +11,7 @@ import java.util.Set;
  * @Date 2017年12月16日 下午8:48:00
  * @version 1.0.0
  */
-public class EdgeWeightedGraph {
+public class WeightedGraph {
 
     private final int V;
     
@@ -21,7 +21,7 @@ public class EdgeWeightedGraph {
     private HashSet<Edge>[] adj;
     
     @SuppressWarnings("unchecked")
-    public EdgeWeightedGraph(int V) {
+    public WeightedGraph(int V) {
         this.V = V;
         this.E = 0;
         this.adj = (HashSet<Edge>[])new HashSet[V];
@@ -53,5 +53,30 @@ public class EdgeWeightedGraph {
         this.adj[v].add(e);
         this.adj[w].add(e);
         E++;
+    }
+    
+    public void print() {            
+        for (int i = 0;i < this.V;i++) {            
+            HashSet<Edge> edges = this.adj[i];   
+            System.out.print(i + ":");
+            for (Edge edge : edges) {
+                if (edge.getFrom() == i) {
+                    System.out.print(edge.getTo() + " ");
+                }                
+            }
+            System.out.println();
+        }
+    }
+    
+    public static void main(String[] args) {        
+        WeightedGraph g = new WeightedGraph(5);
+        
+        g.addEdge(new Edge(0,3, 1));
+        g.addEdge(new Edge(2,0, 4));
+        g.addEdge(new Edge(2,3, 6));
+        g.addEdge(new Edge(2,1, 8));
+        g.addEdge(new Edge(4,2, 9));
+        
+        g.print();
     }
 }

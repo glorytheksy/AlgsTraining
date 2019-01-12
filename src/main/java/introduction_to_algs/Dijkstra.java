@@ -1,7 +1,7 @@
 package introduction_to_algs;
 
 import algorithms.graph.Edge;
-import algorithms.graph.EdgeWeightedDigraph;
+import algorithms.graph.WeightedDirectedGraph;
 /**
  * 
  * @ClassName Dijkstra 算法
@@ -12,7 +12,7 @@ import algorithms.graph.EdgeWeightedDigraph;
  */
 public class Dijkstra {
     
-    private EdgeWeightedDigraph graph;
+    private WeightedDirectedGraph graph;
     
     private int s; // 源点
     
@@ -20,7 +20,7 @@ public class Dijkstra {
     
     private int [] pi; // 顶点回溯用数组
             
-    public Dijkstra(EdgeWeightedDigraph graph, int s) {
+    public Dijkstra(WeightedDirectedGraph graph, int s) {
         this.graph = graph;
         this.s = s;
     }
@@ -66,7 +66,7 @@ public class Dijkstra {
         
         
         
-        EdgeWeightedDigraph di = new EdgeWeightedDigraph(5);
+        WeightedDirectedGraph di = new WeightedDirectedGraph(5);
         di.addEdge(new Edge(0, 1, 3));
         di.addEdge(new Edge(0, 2, 5));
         di.addEdge(new Edge(1, 2, 2));
