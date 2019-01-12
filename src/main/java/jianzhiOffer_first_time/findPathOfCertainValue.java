@@ -2,7 +2,7 @@ package jianzhiOffer_first_time;
 
 import java.util.Stack;
 
-import utils.BinaryNode;
+import data_structure.BinaryNode;
 
 /**
  * 

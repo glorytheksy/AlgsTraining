@@ -3,7 +3,7 @@ package jianzhiOffer_second_time;
 import java.util.HashMap;
 import java.util.Map;
 
-import utils.ComplexListNode;
+import data_structure.ComplexListNode;
 
 /**
  * @ClassName Problem26

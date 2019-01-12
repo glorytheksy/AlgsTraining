@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import utils.BinaryNode;
+import data_structure.BinaryNode;
 import zuochengyun_excercises.MaxTree;
 
 public class TestMaxTree {

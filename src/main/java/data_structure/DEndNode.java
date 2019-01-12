@@ -1,6 +1,12 @@
-package utils;
+package data_structure;
 
-
+/**
+ * @ClassName DEndNode
+ * @Description 双向链表
+ * @author yxmfi
+ * @Date 2019年1月12日 上午10:07:45
+ * @version 1.0.0
+ */
 public class DEndNode {
 
     private int value;

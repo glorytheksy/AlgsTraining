@@ -1,7 +1,6 @@
 package linked_nodes;
 
 
-import utils.Node;
 import zuochengyun_excercises.LinkedNodesUtils;
 
 /**
@@ -14,7 +13,7 @@ import zuochengyun_excercises.LinkedNodesUtils;
  */
 import org.apache.log4j.Logger;
 
-import utils.Node;
+import data_structure.Node;
 
 public class LinkedNodesTestBase {
     

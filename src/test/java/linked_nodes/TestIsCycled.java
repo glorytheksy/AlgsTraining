@@ -4,8 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import data_structure.Node;
 import junit.framework.Assert;
-import utils.Node;
 import zuochengyun_excercises.IsCycled;
 
 public class TestIsCycled   extends LinkedNodesTestBase{

@@ -1,7 +1,7 @@
 package jianzhiOffer_second_time;
 
 import algorithms.graph.Graph;
-import utils.Queue;
+import data_structure.Queue;
 
 public class BFS {
     

@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import utils.Stack;
+import data_structure.Stack;
 
 /**
  * 

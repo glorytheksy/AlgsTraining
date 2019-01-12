@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import utils.Node;
+import data_structure.Node;
 
 /**
  * 

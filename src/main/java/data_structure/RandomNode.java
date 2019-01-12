@@ -1,4 +1,4 @@
-package utils;
+package data_structure;
 
 /**
  * 
@@ -8,13 +8,13 @@ package utils;
  * @Date 2017年9月7日 上午8:55:16
  * @version 1.0.0
  */
-public class RanNode {
+public class RandomNode {
 
     public int value;
-    public RanNode next;
-    public RanNode rand;
+    public RandomNode next;
+    public RandomNode rand;
     
-    public RanNode(int value) {
+    public RandomNode(int value) {
         this.value = value;
     }
 }

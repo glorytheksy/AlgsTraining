@@ -2,7 +2,7 @@ package linked_nodes;
 
 import org.junit.Test;
 
-import utils.Node;
+import data_structure.Node;
 import zuochengyun_excercises.JosephusProblem;
 
 public class TestJosephusProblem {

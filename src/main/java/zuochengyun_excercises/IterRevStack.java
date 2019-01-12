@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import utils.Stack;
+import data_structure.Stack;
 
 public class IterRevStack {
 

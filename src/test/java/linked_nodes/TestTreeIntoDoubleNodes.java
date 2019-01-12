@@ -3,8 +3,8 @@ package linked_nodes;
 import org.junit.Before;
 import org.junit.Test;
 
-import utils.BinaryNode;
-import utils.DEndNode;
+import data_structure.BinaryNode;
+import data_structure.DEndNode;
 import zuochengyun_excercises.TreeIntoDoubleNodes;
 
 public class TestTreeIntoDoubleNodes extends LinkedNodesTestBase{

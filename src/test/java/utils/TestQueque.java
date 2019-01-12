@@ -3,6 +3,8 @@ package utils;
 import org.junit.Before;
 import org.junit.Test;
 
+import data_structure.Queue;
+
 public class TestQueque {
     
     @SuppressWarnings("rawtypes")

@@ -1,6 +1,6 @@
 package introduction_to_algs;
 
-import utils.Node;
+import data_structure.Node;
 
 /**
  * 

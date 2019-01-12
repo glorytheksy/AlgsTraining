@@ -1,6 +1,6 @@
 package jianzhiOffer_first_time;
 
-import utils.BinaryNode;
+import data_structure.BinaryNode;
 
 /**
  * @ClassName TreeSubStructure

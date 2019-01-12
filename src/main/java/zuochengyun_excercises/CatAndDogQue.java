@@ -2,10 +2,6 @@ package zuochengyun_excercises;
 
 import java.util.LinkedList;
 
-import utils.Cat;
-import utils.Dog;
-import utils.Pet;
-
 public class CatAndDogQue {
 
     private LinkedList<Pet> list = new LinkedList<Pet>();

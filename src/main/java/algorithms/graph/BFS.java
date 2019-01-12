@@ -2,7 +2,8 @@ package algorithms.graph;
 
 import java.util.ArrayList;
 import java.util.List;
-import utils.Queue;
+
+import data_structure.Queue;
 
 /**
  * @ClassName BFS

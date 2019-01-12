@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
-import utils.BinaryNode;
-import utils.Queue;
+import data_structure.BinaryNode;
+import data_structure.Queue;
 
 /**
  * 

@@ -1,5 +1,13 @@
-package utils;
+package data_structure;
 
+/**
+ * 
+ * @ClassName BinaryNode
+ * @Description 二叉树
+ * @author yxmfi
+ * @Date 2019年1月12日 上午10:08:14
+ * @version 1.0.0
+ */
 public class BinaryNode {
 
     public int value;

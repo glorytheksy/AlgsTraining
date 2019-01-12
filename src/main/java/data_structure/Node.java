@@ -1,8 +1,16 @@
-package utils;
+package data_structure;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @ClassName Node
+ * @Description 链表
+ * @author yxmfi
+ * @Date 2019年1月12日 上午10:11:38
+ * @version 1.0.0
+ */
 public class Node {
 
     private int value;

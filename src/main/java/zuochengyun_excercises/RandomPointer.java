@@ -3,7 +3,7 @@ package zuochengyun_excercises;
 import java.util.HashMap;
 import java.util.Map;
 
-import utils.RanNode;
+import data_structure.RandomNode;
 
 /**
  * 
@@ -22,21 +22,21 @@ public class RandomPointer {
      * @param head
      * @return
      */
-    public RanNode solution(RanNode head) {
+    public RandomNode solution(RandomNode head) {
         
         if (null == head) {
             throw new RuntimeException();
         }
                
-        RanNode old_pt = head;
-        RanNode new_head = new RanNode(head.value); 
-        RanNode new_pt = new_head;
+        RandomNode old_pt = head;
+        RandomNode new_head = new RandomNode(head.value); 
+        RandomNode new_pt = new_head;
         
-        Map<RanNode,RanNode> map = new HashMap<RanNode,RanNode>();
+        Map<RandomNode,RandomNode> map = new HashMap<RandomNode,RandomNode>();
         map.put(null, null);
         map.put(old_pt, new_pt);
         while (null != old_pt.next) {
-            new_pt.next = new RanNode(old_pt.next.value);
+            new_pt.next = new RandomNode(old_pt.next.value);
             new_pt = new_pt.next;
             old_pt = old_pt.next;
             map.put(old_pt, new_pt);
@@ -60,17 +60,17 @@ public class RandomPointer {
      * @param head
      * @return
      */
-    public RanNode solution2(RanNode head) {
+    public RandomNode solution2(RandomNode head) {
         if (null == head) {
             throw new RuntimeException();
         }
         
-        RanNode cur = head;
-        RanNode curNext = cur.next;
+        RandomNode cur = head;
+        RandomNode curNext = cur.next;
         
         while (null != cur) {
             
-            RanNode mid = new RanNode(cur.value);
+            RandomNode mid = new RandomNode(cur.value);
             cur.next = mid;
             mid.next = curNext;
             
@@ -89,12 +89,12 @@ public class RandomPointer {
      * @Description 复制rand
      * @param head
      */
-    private void randCopy(RanNode head) {
+    private void randCopy(RandomNode head) {
         if (null == head) {
             throw new RuntimeException();
         }
         
-        RanNode pt = head;        
+        RandomNode pt = head;        
         while (null != pt) {            
             pt.next.rand = pt.rand.next;            
             if (null != pt.next)
@@ -108,15 +108,15 @@ public class RandomPointer {
      * @param head
      * @return
      */
-    private RanNode seperateCopy(RanNode head) {
+    private RandomNode seperateCopy(RandomNode head) {
         if (null == head) {
             throw new RuntimeException();
         }
                 
-        RanNode rsHead = head.next;
-        RanNode pt = head;
+        RandomNode rsHead = head.next;
+        RandomNode pt = head;
         while (null != pt) {
-            RanNode copy = pt.next;  
+            RandomNode copy = pt.next;  
             if (null != copy) {
                 pt.next = copy.next;
                 if (null != pt.next) {

@@ -2,7 +2,7 @@ package zuochengyun_excercises;
 
 import org.apache.log4j.Logger;
 
-import utils.Node;
+import data_structure.Node;
 
 public class LinkedNodesUtils{
     

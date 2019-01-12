@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import utils.Node;
+import data_structure.Node;
 /**
  * 
  * @ClassName Problem13

@@ -2,7 +2,7 @@ package zuochengyun_excercises;
 
 import java.util.Stack;
 
-import utils.BinaryNode;
+import data_structure.BinaryNode;
 
 /**
  * 

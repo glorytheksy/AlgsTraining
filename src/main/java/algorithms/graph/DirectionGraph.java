@@ -10,7 +10,7 @@ import java.util.HashSet;
  * @Date 2017年12月4日 下午7:46:32
  * @version 1.0.0
  */
-public class Digraph {
+public class DirectionGraph {
 
     // 顶点数目
     private final int V;
@@ -23,7 +23,7 @@ public class Digraph {
      * @Description 初始化具有v个顶点没有边的图
      * @param v
      */
-    public Digraph(int v) {
+    public DirectionGraph(int v) {
         this.V = v;
         this.E = 0;
         initAdj(v);        
@@ -48,8 +48,8 @@ public class Digraph {
      * @Description 获取反向图
      * @return
      */
-    public Digraph reverse() {
-        Digraph rs = new Digraph(this.V);
+    public DirectionGraph reverse() {
+        DirectionGraph rs = new DirectionGraph(this.V);
         for (int i = 0; i < this.V; i++) {
              for (int e : adj[i]) {
                  rs.addEdge(e, i);

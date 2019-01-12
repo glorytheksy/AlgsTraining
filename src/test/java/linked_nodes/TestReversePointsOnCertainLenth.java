@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import utils.Node;
+import data_structure.Node;
 import zuochengyun_excercises.ReversePointsOnCertainLenth;
 
 public class TestReversePointsOnCertainLenth  extends LinkedNodesTestBase{

@@ -3,7 +3,7 @@ package linked_nodes;
 import org.junit.Before;
 import org.junit.Test;
 
-import utils.Node;
+import data_structure.Node;
 import zuochengyun_excercises.MergeTwoNodes;
 
 public class TestMergeTowNodes extends LinkedNodesTestBase{

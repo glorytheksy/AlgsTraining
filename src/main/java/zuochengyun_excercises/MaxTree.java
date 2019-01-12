@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import utils.BinaryNode;
-import utils.Stack;
+import data_structure.BinaryNode;
+import data_structure.Stack;
 
 public class MaxTree {
         

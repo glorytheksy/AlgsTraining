@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
-import utils.DEndNode;
-import utils.Node;
+import data_structure.DEndNode;
+import data_structure.Node;
 /**
  * 
  * @ClassName ReverseNodes
