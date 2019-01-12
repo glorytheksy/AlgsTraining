@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.Merge2Nodes;
+import zuochengyun_excercises.Merge2Nodes;
 
 public class TestMerge2Nodes extends LinkedNodesTestBase {
     

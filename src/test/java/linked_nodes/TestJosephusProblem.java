@@ -3,7 +3,7 @@ package linked_nodes;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.JosephusProblem;
+import zuochengyun_excercises.JosephusProblem;
 
 public class TestJosephusProblem {
     

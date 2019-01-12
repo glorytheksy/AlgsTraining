@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.junit.Test;
 
 import utils.BinaryNode;
-import zcy.stack_and_queue.MaxTree;
+import zuochengyun_excercises.MaxTree;
 
 public class TestMaxTree {
     

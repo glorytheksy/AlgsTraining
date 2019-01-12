@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 import utils.Node;
-import zcy.linked_nodes.IsCycled;
+import zuochengyun_excercises.IsCycled;
 
 public class TestIsCycled   extends LinkedNodesTestBase{
     

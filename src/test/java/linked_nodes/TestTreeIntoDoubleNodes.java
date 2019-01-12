@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import utils.BinaryNode;
 import utils.DEndNode;
-import zcy.linked_nodes.TreeIntoDoubleNodes;
+import zuochengyun_excercises.TreeIntoDoubleNodes;
 
 public class TestTreeIntoDoubleNodes extends LinkedNodesTestBase{
 

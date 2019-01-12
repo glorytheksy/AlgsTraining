@@ -3,7 +3,7 @@ package linked_nodes;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.DeleteRatioPoint;
+import zuochengyun_excercises.DeleteRatioPoint;
 
 public class TestDeleteRatioPoint {
 

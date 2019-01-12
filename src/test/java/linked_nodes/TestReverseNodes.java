@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.ReverseNodes;
+import zuochengyun_excercises.ReverseNodes;
 
 public class TestReverseNodes extends LinkedNodesTestBase{
 

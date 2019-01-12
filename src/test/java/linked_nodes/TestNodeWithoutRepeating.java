@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.NodeWithoutRepeating;
+import zuochengyun_excercises.NodeWithoutRepeating;
 
 public class TestNodeWithoutRepeating extends LinkedNodesTestBase {
     

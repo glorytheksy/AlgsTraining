@@ -1,7 +1,7 @@
 package introduction_to_algs;
 
-import impl_of_Algorithms.graph.Edge;
-import impl_of_Algorithms.graph.EdgeWeightedDigraph;
+import algorithms.graph.Edge;
+import algorithms.graph.EdgeWeightedDigraph;
 /**
  * 
  * @ClassName Dijkstra 算法

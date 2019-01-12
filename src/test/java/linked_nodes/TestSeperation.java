@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import utils.Node;
-import zcy.linked_nodes.Seperation;
+import zuochengyun_excercises.Seperation;
 
 public class TestSeperation {
 

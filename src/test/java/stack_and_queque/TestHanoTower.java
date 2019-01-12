@@ -3,7 +3,7 @@ package stack_and_queque;
 import org.junit.Test;
 
 import utils.Stack;
-import zcy.stack_and_queue.HanoTower;
+import zuochengyun_excercises.HanoTower;
 
 public class TestHanoTower {
 

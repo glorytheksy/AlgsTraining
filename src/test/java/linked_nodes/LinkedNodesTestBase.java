@@ -2,7 +2,7 @@ package linked_nodes;
 
 
 import utils.Node;
-import zcy.linked_nodes.LinkedNodesUtils;
+import zuochengyun_excercises.LinkedNodesUtils;
 
 /**
  * 
