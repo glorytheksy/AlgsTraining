@@ -61,6 +61,16 @@ public class Edge implements Comparable<Edge> {
             return 0;
         }
     }
+    
+    public int getOtherPoint(int p) {
+        if (p != this.getFrom() && p != this.getTo()) {
+            throw new RuntimeException();
+        } else if (p == this.getFrom()) {
+            return this.getTo();
+        } else {
+            return this.getFrom();
+        }        
+    }
 }
 
 

@@ -8,6 +8,8 @@ import data_structure.Queue;
 /**
  * @ClassName BFS
  * @Description 广度优先搜索算法类(既然是算法类，就应该和具体图解耦, 私有变量没必要包括MyGraph)
+ *              复杂度：O(E) + O(V)
+ *              注：不适用于有环图
  * @author yxmfight
  * @Date 2017年11月28日 上午12:14:01
  * @version 1.0.0

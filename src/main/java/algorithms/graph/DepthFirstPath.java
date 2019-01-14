@@ -17,6 +17,7 @@ public class DepthFirstPath {
     // 起点
     private int v;
     private boolean [] marked;
+    @SuppressWarnings("unused")
     private int count;
     // this is the tricky place!!! 到达某个点路径上的最后一个点 
     private int [] lastButTwo;

@@ -68,6 +68,10 @@ public class WeightedGraph {
         }
     }
     
+    public int getV() {
+        return V;
+    }
+    
     public static void main(String[] args) {        
         WeightedGraph g = new WeightedGraph(5);
         
