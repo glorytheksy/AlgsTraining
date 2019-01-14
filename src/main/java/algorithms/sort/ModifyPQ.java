@@ -1,12 +1,9 @@
 package algorithms.sort;
 
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Map;
 
-public class ModifyPQ <Key extends Comparable<Key>>{
+public class ModifyPQ <Key extends Comparable<Key>> {
 
-    
     // 存储数据数组(第一个元素我们并不使用)
     @SuppressWarnings({"unchecked", "serial" })
     private LinkedList<Key> simHeap = new LinkedList<Key>() {{add(((Key[])new Comparable [1])[0]);}};
@@ -14,10 +11,6 @@ public class ModifyPQ <Key extends Comparable<Key>>{
     // 优先队列数据长度
     private int size = 0;
     
-    // 元素索引哈希表
-    private Map<Integer, Key> referMap = new HashMap<Integer, Key>(); 
-    
-
     public LinkedList<Key> getSimHeap() {
         return simHeap;
     }
@@ -50,6 +43,13 @@ public class ModifyPQ <Key extends Comparable<Key>>{
         if (size >= 1)
             sink(1);
         return rs;
+    }
+    
+    public Key peek() {
+        if (size < 1) {
+            throw new RuntimeException();
+        }
+        return simHeap.set(1, simHeap.get(size));
     }
 
     private void swim(int n) {
@@ -134,6 +134,18 @@ public class ModifyPQ <Key extends Comparable<Key>>{
 
     private boolean equal(Key k1, Key k2) {
         return (0 == (k1.compareTo(k2)));
+    }
+    
+    public static void main(String[] args) {
+        ModifyPQ<Integer> t = new ModifyPQ<Integer>();
+        t.push(1);
+        t.push(2);
+        t.push(3);
+        t.push(4);
+        
+        System.out.println(t.peek());
+        System.out.println(t.poll());
+        System.out.println(t.peek());
     }
     
 }

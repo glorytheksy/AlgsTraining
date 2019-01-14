@@ -3,7 +3,8 @@ package algorithms.graph;
  * 
  * @ClassName BellmanFord
  * @Description 贝尔曼福德算法（求最短路径）
- *              过程类似于dfs
+ *              本实现过程类似于dfs
+ *              复杂度O(VE)
  * @author yxmfight
  * @Date 2019年1月14日 上午9:49:14
  * @version 1.0.0
@@ -14,7 +15,7 @@ public class BellmanFord {
     
     private int[] route;
 
-    public void calculate(WeightedGraph g, int startPoint) {
+    public void calculate(WeightedGraph g, int sourcePoint) {
         if (null == g) {
             throw new RuntimeException();
         }
@@ -24,8 +25,8 @@ public class BellmanFord {
         for (int i = 0;i < g.getV();i++) {
             vertexValues[i] = Integer.MAX_VALUE;
         }
-        vertexValues[startPoint] = 0;
-        searchAndUpdate(g, startPoint);
+        vertexValues[sourcePoint] = 0;
+        searchAndUpdate(g, sourcePoint);
     }
     
     public double[] getVertexValues() {
