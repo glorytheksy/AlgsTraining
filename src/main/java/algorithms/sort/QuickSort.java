@@ -1,4 +1,4 @@
-package introduction_to_algs;
+package algorithms.sort;
 
 /**
  * 

@@ -1,4 +1,6 @@
-package introduction_to_algs;
+package algorithms.sort;
+
+import introduction_to_algs.Heap;
 
 /**
  * 

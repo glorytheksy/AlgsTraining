@@ -24,4 +24,14 @@ public class CommonUtils {
         return x - y * new Double(Math.floor(quotient)).intValue();
     }
     
+    public static void swap(int [] arr, int p1, int p2) {
+        if (arr.length - 1 < p1 || arr.length - 1 < p2) {
+            throw new RuntimeException("err");
+        }
+        
+        int temp = arr[p1];
+        arr[p1] = arr[p2];
+        arr[p2] = temp;
+    }
+    
 }
