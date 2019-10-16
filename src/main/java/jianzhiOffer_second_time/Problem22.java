@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import data_structure.Stack;
+import data_structure.StackForInt;
 
 /**
  * 
@@ -23,8 +23,8 @@ public class Problem22 {
         int p1 = 0;
         int p2 = 0;
         
-        Stack s1 = new Stack();
-        Stack s2 = new Stack();
+        StackForInt s1 = new StackForInt();
+        StackForInt s2 = new StackForInt();
         
         while(!s1.isEmpty() || p1 < l1.length) {
             if (p1 < l1.length) {

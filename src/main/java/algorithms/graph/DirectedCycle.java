@@ -3,7 +3,7 @@ package algorithms.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-import data_structure.Stack;
+import data_structure.StackForInt;
 
 /**
  * 
@@ -63,7 +63,7 @@ public class DirectedCycle {
     
     private void constructCycle(int v, int e) {
         
-        Stack s = new Stack(); 
+        StackForInt s = new StackForInt(); 
         s.push(e); // 尾巴               
         int temp = v;  
         s.push(v);

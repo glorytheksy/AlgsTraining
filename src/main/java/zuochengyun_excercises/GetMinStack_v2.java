@@ -3,45 +3,45 @@ package zuochengyun_excercises;
 import data_structure.Stack;
 
 public class GetMinStack_v2 {
-    
-    Stack dataStack = new Stack();
-    Stack minStack = new Stack();
-    
-    public void push(Integer element) {
+
+    Stack<Integer> dataStack = new Stack<Integer>();
+    Stack<Integer> minStack = new Stack<Integer>();
+
+    public void push(int element) {
         dataStack.push(element);
-        if (minStack.isEmpty()){
+        if (minStack.isEmpty()) {
             minStack.push(element);
         } else {
-            if  (element <= minStack.peek()) {
+            if (element <= (int)(minStack.peek())) {
                 minStack.push(element);
             }
-        }        
+        }
     }
 
-    public Integer pop() {
-        if (dataStack.peek() <= minStack.peek()) {
+    public int pop() {
+        if ((int)(dataStack.peek()) <= (int)(minStack.peek())) {
             minStack.pop();
-        } 
-        return dataStack.pop();
+        }
+        return (int)(dataStack.pop());
     }
-    
+
     public Integer peek() {
-        return dataStack.peek();
+        return (int)(dataStack.peek());
     }
-    
-    public boolean isEmpty(){
+
+    public boolean isEmpty() {
         return dataStack.isEmpty();
     }
-    
-    public int getSize(){
+
+    public int getSize() {
         return dataStack.getSize();
     }
-    
+
     public Integer getMin() {
-        return minStack.peek();
+        return (int)(minStack.peek());
     }
-    
+
     public static void main(String[] args) {
-        
+
     }
 }

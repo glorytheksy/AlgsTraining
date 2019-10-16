@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
+import data_structure.StackForInt;
 import data_structure.Node;
-import data_structure.Stack;
 
 /**
  * 
@@ -19,8 +19,8 @@ public class AddAction {
         /* 生成两个栈 */
         Node p1 = head1;
         Node p2 = head2;
-        Stack s1 = new Stack();
-        Stack s2 = new Stack();
+        StackForInt s1 = new StackForInt();
+        StackForInt s2 = new StackForInt();
         while (null != p1) {
             s1.push(p1.getValue());
             p1 = p1.getNext();

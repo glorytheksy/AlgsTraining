@@ -1,5 +1,6 @@
 package zuochengyun_excercises;
 
+import data_structure.StackForInt;
 import data_structure.Stack;
 
 /**
@@ -12,11 +13,11 @@ import data_structure.Stack;
  */
 public class StackSorting {
     
-    public Stack stackSort(Stack s) {        
+    public StackForInt stackSort(StackForInt s) {        
         if (null == s)
             return null;
         /* 模仿插入排序 */
-        Stack help = new Stack();       
+        StackForInt help = new StackForInt();       
         while (!s.isEmpty()) {
             Integer cur = s.pop();
             join(s,help,cur);
@@ -24,7 +25,7 @@ public class StackSorting {
         return help;
     }
     
-    public void join(Stack s, Stack help, Integer cur) {
+    public void join(StackForInt s, StackForInt help, Integer cur) {
         if (null == s || null == help || null == cur) {
             return;
         }        
@@ -43,7 +44,7 @@ public class StackSorting {
     public static void main(String[] args) {
         StackSorting ss = new StackSorting();
         
-        Stack s = new Stack();
+        StackForInt s = new StackForInt();
         s.push(1);
         s.push(9);
         s.push(3);

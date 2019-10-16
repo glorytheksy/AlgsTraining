@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
+import data_structure.StackForInt;
 import data_structure.Node;
-import data_structure.Stack;
 /**
  * 
  * @ClassName LoopNodes
@@ -39,7 +39,7 @@ public class Palindrome {
         
         /* 右半部分压入栈 */
         Node middle = cur.getNext();    
-        Stack rightS = new Stack();
+        StackForInt rightS = new StackForInt();
         while (null != middle) {
             rightS.push(middle.getValue());
             middle = middle.getNext();

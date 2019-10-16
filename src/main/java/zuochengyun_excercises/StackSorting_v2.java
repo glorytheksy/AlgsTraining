@@ -1,14 +1,15 @@
 package zuochengyun_excercises;
 
+import data_structure.StackForInt;
 import data_structure.Stack;
 
 public class StackSorting_v2 {
 
-    public Stack stackSort(Stack s) {        
+    public StackForInt stackSort(StackForInt s) {        
         if (null == s)
             return null;
         /* 模仿插入排序 */
-        Stack help = new Stack();       
+        StackForInt help = new StackForInt();       
         while (!s.isEmpty()) {
             Integer cur = s.pop();            
             while (!help.isEmpty() && help.peek() >= cur ) {
@@ -22,7 +23,7 @@ public class StackSorting_v2 {
     public static void main(String[] args) {
         StackSorting ss = new StackSorting();
         
-        Stack s = new Stack();
+        StackForInt s = new StackForInt();
         s.push(1);
         s.push(9);
         s.push(3);

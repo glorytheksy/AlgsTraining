@@ -1,11 +1,12 @@
 package zuochengyun_excercises;
 
+import data_structure.StackForInt;
 import data_structure.Stack;
 
 public class IterRevStack {
 
 
-    public static Integer getAndRmvBottom(Stack s) {
+    public static Integer getAndRmvBottom(StackForInt s) {
         if (null == s) {
             return null;
         }
@@ -20,7 +21,7 @@ public class IterRevStack {
         }
     }
         
-    public static void revStack(Stack s) {
+    public static void revStack(StackForInt s) {
         if (null == s){
             return;
         }

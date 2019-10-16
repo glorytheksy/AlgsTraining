@@ -2,49 +2,47 @@ package data_structure;
 
 import java.util.LinkedList;
 
-public class Stack {
-    
-    
+public class Stack<T> {
+
     public String getName() {
         return name;
     }
 
-    
     public void setName(String name) {
         this.name = name;
     }
 
     protected String name;
-    
-    protected LinkedList<Integer> list = new LinkedList<Integer>();
-    
+
+    protected LinkedList<T> list = new LinkedList<T>();
+
     protected int size;
-    
-    public void push(Integer element) {        
+
+    public void push(T element) {
         list.add(element);
-        size++;        
+        size++;
     }
-    
-    public Integer pop() {
+
+    public T pop() {
         if (0 == size) {
             throw new RuntimeException();
         }
         size--;
-        return list.removeLast();        
+        return list.removeLast();
     }
-    
+
     public boolean isEmpty() {
         return 0 == size;
     }
-    
-    public Integer peek() {
-        if (0 == size){
+
+    public T peek() {
+        if (0 == size) {
             throw new RuntimeException("����Ϊ0");
         }
-        return list.get(size - 1);         
+        return list.get(size - 1);
     }
-    
-    public int getSize() {        
-        return size;        
+
+    public int getSize() {
+        return size;
     }
 }

@@ -3,9 +3,9 @@ package zuochengyun_excercises;
 import java.util.ArrayList;
 import java.util.List;
 
+import data_structure.StackForInt;
 import data_structure.Node;
 import data_structure.Queue;
-import data_structure.Stack;
 
 /**
  * 
@@ -34,7 +34,7 @@ public class Seperation {
         }
         
         Queue<Integer> smal = new Queue<Integer>();
-        Stack eql = new Stack();
+        StackForInt eql = new StackForInt();
         Queue<Integer> big = new Queue<Integer>();
         
         Node pt = head;

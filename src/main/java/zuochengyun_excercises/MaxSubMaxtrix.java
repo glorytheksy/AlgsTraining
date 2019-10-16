@@ -1,10 +1,10 @@
 package zuochengyun_excercises;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import data_structure.StackForInt;
 import data_structure.Stack;
 
 /**
@@ -58,7 +58,7 @@ public class MaxSubMaxtrix {
             return rs;
         }
         
-        Stack lt = new Stack();
+        StackForInt lt = new StackForInt();
         for (int i = 0 ; i < list.size(); i++) {            
             while (!lt.isEmpty() && list.get(lt.peek()) > list.get(i)) {
                 lt.pop();
@@ -85,7 +85,7 @@ public class MaxSubMaxtrix {
             return rs;
         }
         
-        Stack rt = new Stack();
+        StackForInt rt = new StackForInt();
         for (int i = list.size() - 1 ; i >= 0; i--) {            
             while (!rt.isEmpty() && list.get(rt.peek()) > list.get(i)) {
                 rt.pop();

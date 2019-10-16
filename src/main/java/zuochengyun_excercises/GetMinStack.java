@@ -1,17 +1,13 @@
 package zuochengyun_excercises;
 
-import data_structure.Stack;
+import data_structure.StackForInt;
 
-public class GetMinStack extends Stack{
+public class GetMinStack extends StackForInt {
     
-    protected Stack minStack = new Stack();
+    protected StackForInt minStack = new StackForInt();
         
     @Override
-    public void push (Integer element) {
-        if (null == element) {
-            throw new RuntimeException("����������Ԫ��");            
-        }        
-        
+    public void push (int element) {
         super.push(element);
         if (minStack.isEmpty()) {            
             minStack.push(element);
@@ -21,12 +17,12 @@ public class GetMinStack extends Stack{
     }
     
     @Override
-    public Integer pop() {
+    public int pop() {
         minStack.pop();        
         return super.pop();
     }
     
-    public Integer getMin() {
+    public int getMin() {
         return minStack.peek();
     }
     

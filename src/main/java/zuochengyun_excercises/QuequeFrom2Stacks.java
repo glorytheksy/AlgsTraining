@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import data_structure.Stack;
+import data_structure.StackForInt;
 
 /**
  * 
@@ -13,9 +13,9 @@ import data_structure.Stack;
 public class QuequeFrom2Stacks {
     
     // ����ջ
-    private Stack normalOrder = new Stack();
+    private StackForInt normalOrder = new StackForInt();
     // ����ջ
-    private Stack reverseOrder = new Stack();
+    private StackForInt reverseOrder = new StackForInt();
     // ����
     private int size;
     

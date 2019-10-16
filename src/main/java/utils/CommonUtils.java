@@ -34,4 +34,15 @@ public class CommonUtils {
         arr[p2] = temp;
     }
     
+    public static void printArr(int [] arr) {
+        if (null == arr) {
+            System.out.println("null");
+            return;
+        }
+        
+        for (int ele : arr) {
+            System.out.print("" + ele + " ");
+        }
+    }
+    
 }

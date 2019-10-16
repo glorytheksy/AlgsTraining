@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import data_structure.Stack;
+import data_structure.StackForInt;
 
 /**
  * @ClassName Problem21
@@ -11,8 +11,8 @@ import data_structure.Stack;
  */
 public class Problem21 {
 
-    private Stack s1 = new Stack();  
-    private Stack s2 = new Stack();  
+    private StackForInt s1 = new StackForInt();  
+    private StackForInt s2 = new StackForInt();  
     
     public void push(int e) {
         s1.push(e);
