@@ -1,4 +1,4 @@
-package introduction_to_algs;
+package data_structure;
 
 import java.util.LinkedList;
 

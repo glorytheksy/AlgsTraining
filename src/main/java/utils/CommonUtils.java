@@ -45,4 +45,16 @@ public class CommonUtils {
         }
     }
     
+    public static void printArr(int [] arr, int head, int tail) {
+        if (null == arr) {
+            System.out.println("null");
+            return;
+        }
+        
+        for (int i = head; i <= tail; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+    
 }

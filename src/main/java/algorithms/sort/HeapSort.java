@@ -1,6 +1,6 @@
 package algorithms.sort;
 
-import introduction_to_algs.Heap;
+import data_structure.Heap;
 
 /**
  * 
