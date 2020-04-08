@@ -1,10 +1,28 @@
-package leetcode.algs.permutation;
+package leetcode.algs.backtrack;
 
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class Permutate {
+	
+	/**
+	 * 回溯法
+	 * @param nums
+	 * @return
+	 */
+	public List<List<Integer>> permute2(int[] nums) {
 		
+		// 过程省略
+		return null;
+	}
+	
+
+	/**
+	 *  非回溯法
+	 * @param nums
+	 * @return
+	 */
     public List<List<Integer>> permute(int[] nums) {
     	if (null == nums) {
     		return null;

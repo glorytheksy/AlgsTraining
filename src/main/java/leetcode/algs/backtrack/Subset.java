@@ -1,8 +1,12 @@
-package leetcode.algs.permutation;
+package leetcode.algs.backtrack;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 过程如果化为图形，很像bfs
+ * @author glorythesky
+ */
 public class Subset {
 	
     public List<List<Integer>> subsets(int[] nums) {
