@@ -1,5 +1,7 @@
 package utils;
 
+import data_structure.Node;
+
 /**
  * 
  * @ClassName CommonUtils
@@ -55,6 +57,26 @@ public class CommonUtils {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
+    }
+    
+    public static Node genNode(int [] nums) {
+        Node res = new Node(0);
+        Node head = res;
+        for (int e : nums) {
+            res.setNext(new Node(e));
+            res = res.getNext();
+        }
+        return head.getNext();
+    }
+    
+    public static void main(String[] args) {
+        int nums[] = new int [] {1,2,3,4,5,6};
+        
+        Node node = CommonUtils.genNode(nums);
+        while (null != node) {
+            System.out.println(node.getValue());
+            node = node.getNext();
+        }
     }
     
 }
