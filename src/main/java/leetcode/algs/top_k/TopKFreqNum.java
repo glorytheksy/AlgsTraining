@@ -38,8 +38,7 @@ public class TopKFreqNum {
             freqs[cnt] = entry.getValue();
             cnt++;
         }
-        
-        
+                
         /**
          * topK freqs
          */

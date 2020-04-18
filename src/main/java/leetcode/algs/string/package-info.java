@@ -51,6 +51,12 @@ package leetcode.algs.string;
  * 5. 删除
  *     builder.delete(int startIndex, int endInder)
  * 
+ * String 和 char[]相互转换的方法：
+ * 	bm = str.toCharArray();
+ * 	str = String.valueOf(bm);
+ * 
+ * 
+ * 
  * 
  * 
  */
