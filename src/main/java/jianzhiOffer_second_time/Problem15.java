@@ -1,7 +1,5 @@
 package jianzhiOffer_second_time;
 
-import javax.management.RuntimeErrorException;
-
 import data_structure.Node;
 
 /**
