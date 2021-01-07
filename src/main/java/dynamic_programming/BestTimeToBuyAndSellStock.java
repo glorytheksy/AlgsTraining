@@ -4,6 +4,10 @@ package dynamic_programming;
 public class BestTimeToBuyAndSellStock {
 
     public int maxProfit(int[] prices) {
+        if (null == prices || 0 == prices.length) {
+            return 0;
+        }
+        
         // dp[i] 以  price[i + 1]为sell点的maxprofit 
         int [] dp = new int [prices.length];
         
