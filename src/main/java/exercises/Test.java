@@ -7,7 +7,7 @@ public class Test {
 
     public void solution(){
         
-        List<Demo> demoList = new ArrayList<>(); 
+        List<Demo> demoList = new ArrayList<Demo>(); 
         while(true) {
             demoList.add(new Demo());
         }

@@ -22,7 +22,7 @@ public class WeightedDirectedGraph {
         E = 0;  
         adj = (List<Edge>[]) new List[V];  
         for (int i = 0; i < V; i++) {  
-            adj[i] = new ArrayList<>();  
+            adj[i] = new ArrayList<Edge>();  
         }  
     }  
       
@@ -44,7 +44,7 @@ public class WeightedDirectedGraph {
     }  
       
     public Iterable<Edge> edges() {  
-        List<Edge> edges = new ArrayList<>();  
+        List<Edge> edges = new ArrayList<Edge>();  
         for (int i = 0; i < V; i++) {  
             for (Edge e : adj[i]) {  
                 edges.add(e);  
