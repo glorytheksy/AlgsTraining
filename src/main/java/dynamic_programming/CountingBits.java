@@ -49,9 +49,9 @@ public class CountingBits {
     }
     
     public static void main(String[] args) {
-    	CountingBits solution = new CountingBits();
-    	int num = 5;
-    	CommonUtils.printArr(solution.countBits2(5));
+//    	CountingBits solution = new CountingBits();
+//    	int num = 5;
+//    	CommonUtils.printArr(solution.countBits2(5));
 	}
 	
 }
