@@ -1,5 +1,8 @@
 package utils;
 
+import java.util.Map;
+import java.util.Set;
+
 import data_structure.Node;
 
 /**
@@ -125,6 +128,31 @@ public class CommonUtils {
          }
     }
     
+    public static <T> void mapAdd(Map<T, Integer> map, T t) {
+        if (!map.containsKey(t)) {
+            map.put(t, 1);
+        } else {
+            map.put(t, map.get(t) + 1);
+        }
+    }
+    
+    public static <T> void mapRemove(Map<T, Integer> map, T t) {
+        if (!map.containsKey(t)) {
+            return;
+        } else if (1 == map.get(t)){
+            map.remove(t);
+        } else {
+            map.put(t, map.get(t) - 1);
+        }
+    }
+    
+    public static <T> void setRemove(Set<T> set, T t) {
+        if (!set.contains(t)) {
+            return;
+        } else {
+            set.remove(t);
+        }
+    }
     
     public static void main(String[] args) {
         final int[][] matrix = {

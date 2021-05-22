@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import com.sun.javafx.util.Utils;
+
+import utils.CommonUtils;
+
 public class MinimumWindowSubstring {
     
     public String minWindow(String s, String t) {
@@ -12,72 +16,49 @@ public class MinimumWindowSubstring {
         }
        int len = s.length();
         
-       Set<Character> set = new HashSet<Character>();
        Set<Character> rest = new HashSet<Character>();
-       for (Character ele : t.toCharArray()) {
-           rest.add(ele);
-           set.add(ele);
-       }
+       for (Character ele : t.toCharArray()) { rest.add(ele); }
        Map<Character, Integer> contained = new HashMap<Character, Integer>();
-
-       contained.put(s.charAt(0), 1);
-       if (rest.contains(s.charAt(0))) {
-           rest.remove(s.charAt(0));
-       }
        
-       String min = "hjkjfhjfhfhjfhjfhf";
-       int rt = 1;
-       for (int lt = 0; lt < len; lt++) {
-           while (rt < len && !rest.isEmpty()) {
-               if (rest.contains(s.charAt(rt))) {
-                   rest.remove(s.charAt(rt));
-               }
-               
-               if (contained.containsKey(s.charAt(rt))) {
-                   contained.put(s.charAt(rt), contained.get(s.charAt(rt)) + 1);
-               } else {
-                   contained.put(s.charAt(rt), 1);
-               }
-               if (rt < len - 1 && !rest.isEmpty()) rt++;
-           }
+       int minLen = Integer.MAX_VALUE;
+       String minStr = "";
+       
+       int lt = 0;
+       int rt = 0;
+       while (rt < len) {
+           char rt_char = s.charAt(rt);
+           rt++;
+           CommonUtils.mapAdd(contained, rt_char);
+           CommonUtils.setRemove(rest, rt_char);
+           System.out.println("window: lt" + lt + ", rt: " + rt);
            
-           if (rest.isEmpty()) {
-               if (min.length() > rt - lt + 1) {
-                   min = s.substring(lt, rt+1);
+           while (rest.isEmpty() && lt <= rt - 1) {
+               char lt_char = s.charAt(lt);
+               if (minLen > (rt - 1 - (lt - 1) + 1)) {
+                   minStr = s.substring(lt - 1, rt - 1 + 1);
+                   minLen = minStr.length();
                }
-           }
-           
-           if (null != contained.get("C") && 1 == contained.get("C")) {
-               System.out.println("asdf");
-           }
-           
-           try {
-               if (null != contained.get(s.charAt(lt)) && 1 == contained.get(s.charAt(lt))) {
-                   contained.remove(s.charAt(lt));
-                   if (set.contains(s.charAt(lt))) {
-                       rest.add(s.charAt(lt));
+               lt++;
+               if (contained.containsKey(lt_char)) {
+                   if (1 == contained.get(lt_char)) {
+                       contained.remove(lt_char);
+                       rest.add(lt_char);
+                   } else {
+                       contained.put(lt_char, contained.get(lt_char) - 1);
                    }
-               } else {
-                   contained.put(s.charAt(lt), contained.get(s.charAt(lt)) - 1);
                }
-           } catch (Exception e) {
-               System.out.println("lt:" + lt);
-               System.out.println("rt:" + rt);
-               System.out.println("con:" + contained);
-               System.out.println("rest:" + rest);
-               System.out.println("set:" + set);
            }
        }
-       
-       return min;
+       return minStr;
     }
-    
-    
+        
     public static void main(String[] args) {
         
         MinimumWindowSubstring solution = new MinimumWindowSubstring();
-        String s = "ADOBECODEBANC";
-        String t = "ABC";
+//        String s = "ADOBECODEBANC";
+//        String t = "ABC";
+        String s = "a";
+        String t = "a";
         System.out.println(solution.minWindow(s, t));
     }
     
