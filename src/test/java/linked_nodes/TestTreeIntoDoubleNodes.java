@@ -3,8 +3,8 @@ package linked_nodes;
 import org.junit.Before;
 import org.junit.Test;
 
-import data_structure.BinaryNode;
-import data_structure.DEndNode;
+import data_structure_basic.BiNode;
+import data_structure_basic.BinaryNode;
 import zuochengyun_excercises.TreeIntoDoubleNodes;
 
 public class TestTreeIntoDoubleNodes extends LinkedNodesTestBase{
@@ -26,9 +26,9 @@ public class TestTreeIntoDoubleNodes extends LinkedNodesTestBase{
         mid.left = left;
         mid.right = right;
         
-        DEndNode rs = alg.solution(mid);
+        BiNode rs = alg.solution(mid);
         
-        DEndNode pt = rs;
+        BiNode pt = rs;
         while (null != pt) {
             System.out.println(pt.getValue());
             pt = pt.getPost();

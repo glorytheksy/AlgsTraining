@@ -3,7 +3,7 @@ package zuochengyun_excercises;
 import java.util.HashMap;
 import java.util.Map;
 
-import data_structure.RandomNode;
+import data_structure_high_level.RandomNode;
 
 /**
  * 

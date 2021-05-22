@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import data_structure.Stack;
+import data_structure_basic.Stack;
 
 public class GetMinStack_v2 {
 

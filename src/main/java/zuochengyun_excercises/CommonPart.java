@@ -3,7 +3,7 @@ package zuochengyun_excercises;
 import java.util.HashMap;
 import java.util.Map;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 
 /**
  * 

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import data_structure.Queue;
+import data_structure_basic.Queue;
 public class TopologicalSort {
 
 	public boolean canFinish(int numCourses, int[][] prerequisites) {

@@ -13,7 +13,7 @@ import zuochengyun_excercises.LinkedNodesUtils;
  */
 import org.apache.log4j.Logger;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 
 public class LinkedNodesTestBase {
     

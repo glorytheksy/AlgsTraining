@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import data_structure.BinaryNode;
+import data_structure_basic.BinaryNode;
 
 /**
  * 

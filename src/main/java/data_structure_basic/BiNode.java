@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure_basic;
 
 /**
  * @ClassName DEndNode
@@ -7,18 +7,18 @@ package data_structure;
  * @Date 2019年1月12日 上午10:07:45
  * @version 1.0.0
  */
-public class DEndNode {
+public class BiNode {
 
     private int value;
     
-    private DEndNode post;
+    private BiNode post;
     
-    private DEndNode pre;
+    private BiNode pre;
         
-    public DEndNode() {
+    public BiNode() {
     }
     
-    public DEndNode(int value) {
+    public BiNode(int value) {
         this.value = value;
     }
 
@@ -30,19 +30,19 @@ public class DEndNode {
         this.value = value;
     }
 
-    public DEndNode getPost() {
+    public BiNode getPost() {
         return post;
     }
 
-    public void setPost(DEndNode post) {
+    public void setPost(BiNode post) {
         this.post = post;
     }
 
-    public DEndNode getPre() {
+    public BiNode getPre() {
         return pre;
     }
 
-    public void setPre(DEndNode pre) {
+    public void setPre(BiNode pre) {
         this.pre = pre;
     }
 

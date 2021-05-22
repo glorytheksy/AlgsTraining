@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import data_structure.BinaryNode;
+import data_structure_basic.BinaryNode;
 
 /**
  * @ClassName Problem19

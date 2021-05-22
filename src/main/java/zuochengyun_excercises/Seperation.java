@@ -3,9 +3,9 @@ package zuochengyun_excercises;
 import java.util.ArrayList;
 import java.util.List;
 
-import data_structure.StackForInt;
-import data_structure.Node;
-import data_structure.Queue;
+import data_structure_basic.Node;
+import data_structure_basic.Queue;
+import data_structure_basic.StackForInt;
 
 /**
  * 

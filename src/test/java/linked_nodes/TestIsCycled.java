@@ -4,7 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 import junit.framework.Assert;
 import zuochengyun_excercises.IsCycled;
 

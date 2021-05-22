@@ -1,4 +1,4 @@
-package java_data_structure_self_impl;
+package data_structure_basic;
 
 public class MyArrayList<Item> {
         

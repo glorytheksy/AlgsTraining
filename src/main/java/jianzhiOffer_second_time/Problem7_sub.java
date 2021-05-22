@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import data_structure.Queue;
+import data_structure_basic.Queue;
 
 /**
  * 

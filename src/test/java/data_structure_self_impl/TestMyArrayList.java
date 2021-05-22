@@ -2,7 +2,7 @@ package data_structure_self_impl;
 
 import org.junit.Test;
 
-import java_data_structure_self_impl.MyArrayList;
+import data_structure_basic.MyArrayList;
 
 public class TestMyArrayList {
 

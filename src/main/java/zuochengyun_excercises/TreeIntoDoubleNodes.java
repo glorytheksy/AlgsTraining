@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
-import data_structure.BinaryNode;
-import data_structure.DEndNode;
+import data_structure_basic.BiNode;
+import data_structure_basic.BinaryNode;
 
 /**
  * 
@@ -21,20 +21,20 @@ public class TreeIntoDoubleNodes {
      * @param tree
      * @return
      */
-    public DEndNode solution(BinaryNode tree) {        
+    public BiNode solution(BinaryNode tree) {        
         if (null == tree) {
             return null;
         }
         
-        DEndNode leftHead = solution(tree.left);
-        DEndNode leftTail = getTail(leftHead);
+        BiNode leftHead = solution(tree.left);
+        BiNode leftTail = getTail(leftHead);
         
-        DEndNode mid = new DEndNode(tree.getValue());
+        BiNode mid = new BiNode(tree.getValue());
         mid.setPre(leftTail);
         if (null != leftTail)
             leftTail.setPost(mid);
         
-        DEndNode rightHead = solution(tree.right);
+        BiNode rightHead = solution(tree.right);
         mid.setPost(rightHead);
         if (null != rightHead)
             rightHead.setPre(mid);
@@ -67,13 +67,13 @@ public class TreeIntoDoubleNodes {
      * @param head
      * @return
      */
-    private DEndNode getTail(DEndNode head) {
+    private BiNode getTail(BiNode head) {
         
         if (null == head) {
             return null;
         }
         
-        DEndNode pt = head;
+        BiNode pt = head;
         while (null != pt.getPost()) {
             pt = pt.getPost();
         }

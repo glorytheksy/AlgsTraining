@@ -98,7 +98,6 @@ public class Dijkstra {
         /**
          * value值小vertex值大（若使用最大优先队列）
          */
-        @Override
         public int compareTo(Vertex o) {
             if (this.value > o.value) {
                 return -1;

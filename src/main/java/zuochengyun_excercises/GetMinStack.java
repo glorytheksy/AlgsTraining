@@ -1,6 +1,6 @@
 package zuochengyun_excercises;
 
-import data_structure.StackForInt;
+import data_structure_basic.StackForInt;
 
 public class GetMinStack extends StackForInt {
     

@@ -29,9 +29,9 @@
  *****************************************************************/
 /**
  * @ClassName package-info
- * @Description 常用数据结构
+ * @Description 常见的高阶数据结构
  * @author yxmfi
  * @Date 2019年1月12日 上午9:39:57
  * @version 1.0.0
  */
-package data_structure;
+package data_structure_high_level;

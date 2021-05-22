@@ -2,7 +2,7 @@ package linked_nodes;
 
 import org.junit.Test;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 import zuochengyun_excercises.DeleteRatioPoint;
 
 public class TestDeleteRatioPoint {

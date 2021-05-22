@@ -3,7 +3,7 @@ package zuochengyun_excercises;
 import java.util.HashMap;
 import java.util.Map;
 
-import data_structure.BinaryNode;
+import data_structure_basic.BinaryNode;
 
 /**
  * 

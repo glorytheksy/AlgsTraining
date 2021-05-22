@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 
 
 /**

@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
-import data_structure.DEndNode;
-import data_structure.Node;
+import data_structure_basic.BiNode;
+import data_structure_basic.Node;
 /**
  * 
  * @ClassName ReverseNodes
@@ -52,14 +52,14 @@ public class ReverseNodes {
      * @param head
      * @return
      */
-    public DEndNode solution2(DEndNode head) {
+    public BiNode solution2(BiNode head) {
         if (null == head) {
             throw new RuntimeException();
         }
         
-        DEndNode p1 = head;
-        DEndNode left = null;
-        DEndNode right = null;
+        BiNode p1 = head;
+        BiNode left = null;
+        BiNode right = null;
         while (null != p1.getPost()) {
             left = p1.getPre();
             right = p1.getPost();

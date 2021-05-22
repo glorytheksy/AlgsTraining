@@ -3,7 +3,7 @@ package linked_nodes;
 import org.junit.Before;
 import org.junit.Test;
 
-import data_structure.Node;
+import data_structure_basic.Node;
 import zuochengyun_excercises.AddAction;
 
 public class TestAddAction {

@@ -2,8 +2,10 @@ package utils;
 
 import java.util.Map;
 import java.util.Set;
+import java.util.Stack;
 
-import data_structure.Node;
+import data_structure_basic.Node;
+
 
 /**
  * 
@@ -81,6 +83,23 @@ public class CommonUtils {
         for (int ele : arr) {
             System.out.print("" + ele + " ");
         }
+        System.out.println();
+    }
+    
+    /**
+     * 打印堆栈
+     * @param stack
+     */
+    public static void printStack(Stack<Integer> stack) {
+        if (null == stack) {
+            System.out.println("null");
+            return;
+        }
+        
+        for (int ele : stack) {
+            System.out.print("" + ele + " ");
+        }
+        System.out.println();
     }
     
     /**

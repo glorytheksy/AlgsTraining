@@ -1,6 +1,6 @@
 package algorithms.sort;
 
-import data_structure.Heap;
+import data_structure_basic.Heap;
 
 /**
  * 

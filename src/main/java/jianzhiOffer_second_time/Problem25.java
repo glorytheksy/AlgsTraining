@@ -3,7 +3,7 @@ package jianzhiOffer_second_time;
 import java.util.ArrayList;
 import java.util.List;
 
-import data_structure.BinaryNode;
+import data_structure_basic.BinaryNode;
 
 /**
  * @ClassName Problem25

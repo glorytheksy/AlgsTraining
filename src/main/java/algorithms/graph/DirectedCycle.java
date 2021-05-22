@@ -3,7 +3,7 @@ package algorithms.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-import data_structure.StackForInt;
+import data_structure_basic.StackForInt;
 
 /**
  * 

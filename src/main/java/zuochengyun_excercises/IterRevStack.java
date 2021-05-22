@@ -1,7 +1,7 @@
 package zuochengyun_excercises;
 
-import data_structure.StackForInt;
-import data_structure.Stack;
+import data_structure_basic.Stack;
+import data_structure_basic.StackForInt;
 
 public class IterRevStack {
 

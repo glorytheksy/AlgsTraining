@@ -1,9 +1,7 @@
 package leetcode.algs.kway_merge;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.PriorityQueue;
-import java.util.Set;
 
 /**
  * @ClassName MergeKSortedLists
@@ -22,48 +20,48 @@ class ListNode {
 }
 
 public class MergeKSortedLists {
-    Comparator<ListNode> comparator = new Comparator<ListNode>() {
-        @Override
-        public int compare(ListNode l1, ListNode l2) {
-            return l1.val - l2.val;
-        }
-    };
-
-    public ListNode mergeKLists(ListNode[] lists) {
-        /* init the result list */
-        ListNode res = new ListNode(0); // auxiliary head 
-        ListNode headOfRes = res;
-        /* build que */ 
-        PriorityQueue<ListNode> que = new PriorityQueue<ListNode>(comparator); 
-        for (ListNode node : lists) {
-            if (null == node) {
-                continue;
-            }
-            que.add(node);
-        }                
-        
-        /* build result list */
-        while (!que.isEmpty()) {
-            ListNode cur = que.poll();
-            res.next = cur;
-            res = res.next;
-            
-            if (null == cur.next) {
-                continue;
-            } else {
-                que.add(cur.next);
-            }
-
-        }
-        
-        /* cut the first one */
-        return headOfRes.next;
-    }
-
-    public static void main(String[] args) {
-        int attachArr[] = new int [] {1,2,3,4,5,6};
-        
-        
-    }
+//    Comparator<ListNode> comparator = new Comparator<ListNode>() {
+//        @Override
+//        public int compare(ListNode l1, ListNode l2) {
+//            return l1.val - l2.val;
+//        }
+//    };
+//
+//    public ListNode mergeKLists(ListNode[] lists) {
+//        /* init the result list */
+//        ListNode res = new ListNode(0); // auxiliary head 
+//        ListNode headOfRes = res;
+//        /* build que */ 
+//        PriorityQueue<ListNode> que = new PriorityQueue<ListNode>(comparator); 
+//        for (ListNode node : lists) {
+//            if (null == node) {
+//                continue;
+//            }
+//            que.add(node);
+//        }                
+//        
+//        /* build result list */
+//        while (!que.isEmpty()) {
+//            ListNode cur = que.poll();
+//            res.next = cur;
+//            res = res.next;
+//            
+//            if (null == cur.next) {
+//                continue;
+//            } else {
+//                que.add(cur.next);
+//            }
+//
+//        }
+//        
+//        /* cut the first one */
+//        return headOfRes.next;
+//    }
+//
+//    public static void main(String[] args) {
+//        int attachArr[] = new int [] {1,2,3,4,5,6};
+//        
+//        
+//    }
     
 }

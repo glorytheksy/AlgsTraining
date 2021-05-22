@@ -1,5 +1,5 @@
 package jianzhiOffer_third_time;
-import data_structure.BinaryNode;
+import data_structure_basic.BinaryNode;
 /*
  * 注意
  */

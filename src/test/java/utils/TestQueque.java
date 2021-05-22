@@ -3,7 +3,7 @@ package utils;
 import org.junit.Before;
 import org.junit.Test;
 
-import data_structure.Queue;
+import data_structure_basic.Queue;
 
 public class TestQueque {
     

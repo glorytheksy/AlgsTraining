@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import data_structure.StackForInt;
-import data_structure.Stack;
+import data_structure_basic.Stack;
+import data_structure_basic.StackForInt;
 
 /**
  * 
