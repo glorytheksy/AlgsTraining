@@ -1,23 +1,25 @@
 package exercises;
 
-import java.util.ArrayList;
-import java.util.List;
+import utils.CommonUtils;
+
+import java.util.*;
+
+
 
 public class Test {
 
-    public void solution(){
-        
-        List<Demo> demoList = new ArrayList<Demo>(); 
-        while(true) {
-            demoList.add(new Demo());
-        }
-        
-    }
+
+    
     
     public static void main(String[] args) {
-        Test t = new Test();
+        Test d = new Test();
+
+        Integer [] num = {1,2,3,4,5,null,7};
+
+//        CommonUtils.genNode()
         
-        t.solution();
+//        int target = 6;
+//        System.out.println(d.twoSum(nums, ));
         
         
     }
