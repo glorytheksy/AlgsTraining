@@ -39,7 +39,25 @@ public class CommonJavaCode {
         /* 队列的初始化 */
         // Queue是个借口，初始化的时候要用的LinkedList<>
         Queue<Integer> que = new LinkedList<Integer>();
+        // java 队列的加和减，使用offer和poll
+        que.offer(3);
+        que.poll();
         
+        /* java List 的拷贝*/
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+        // 可以使用clone, 注意clone 只能使Object调用，接口是调用不了的
+        ArrayList<Integer> list3 = (ArrayList<Integer>) list2.clone();
+        // 也可以用新建List初始化的方法拷贝
+        List<Integer> list4 = new ArrayList<Integer>(list2);
+        
+        /* java List的合并使用addAll */
+        List<Integer> list5 = new ArrayList<Integer>();
+        list5.add(5);
+//        list5.addAll(null);  注意不可以addAll null
+        System.out.println(list5);
+        
+        /* java中的/**注释该怎么去除？ */
+        // 没有快捷键，就用alt + 鼠标纵向选择，再delete即可 
     }
     
     
