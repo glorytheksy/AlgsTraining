@@ -4,23 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
+    
+    public void haha() {
+        return;
+    }
+    
 
-    public void solution(){
-        
-        List<Demo> demoList = new ArrayList<Demo>(); 
-        while(true) {
-            demoList.add(new Demo());
-        }
-        
-    }
-    
     public static void main(String[] args) {
-        Test t = new Test();
         
-        t.solution();
+        List<Integer> list = new ArrayList<Integer>();
+        int n = 10;
+        
+        for (int i = 0; i<)
+        
         
         
     }
-    
-    
+
 }
