@@ -2,14 +2,14 @@ package impl_of_Algorithms_from_Sedgewick;
 
 import org.junit.Test;
 
-import algorithms.sort.PriorityQue;
+import algorithms.sort.MyPriorityQueue;
 
-public class TestPriorityQueque {
+public class TestMyPriorityQueque {
 
     @Test
     public void test() {
 
-        PriorityQue pq = new PriorityQue();
+        MyPriorityQueue pq = new MyPriorityQueue();
         
         pq.push(2);
         pq.push(21);

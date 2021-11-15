@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb05eb1-9085-403b-ba00-4626bdb1df0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/subsets_and_recursion/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exercises/Trie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/binary_search/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/listnode/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/moore_vote/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/tree/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ListNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/sort/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/algorithms/sort/PriorityQue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/algorithms/sort/MyPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dynamic_programming/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic_programming/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercises/Demo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exercises/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercises/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercises/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jianzhiOffer_second_time/Problem27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jianzhiOffer_second_time/Problem27.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/bits/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/bits/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/dfs/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/dfs/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/kway_merge/FindClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/kway_merge/FindClosestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/DecodeString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/topological_sort/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/topological_sort/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestPriorityQueque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestMyPriorityQueque.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,32 +58,29 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="1584">
+              <caret line="93" column="49" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#568#583#0" expanded="true" />
-                <element signature="e#640#650#0" expanded="true" />
-                <element signature="e#734#743#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/package-info.java">
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/moore_vote/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="180">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommonJavaCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java">
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="558">
+              <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -78,27 +95,65 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>排序</find>
+      <find>offer</find>
+      <find>栈</find>
+      <find>default</find>
+      <find>set</find>
+      <find>list</find>
+      <find>queue</find>
+      <find>StringBuilde</find>
+      <find>StringBuilder</find>
+      <find>clone</find>
+      <find>PriorityQue</find>
+      <find>String</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>MyPriorityQueue</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/data_structure_high_level/segment_tree/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/algorithms/graph/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/ValidParentheses.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/DecodeString.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/greedy/AdvantageCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exercises/Demo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/PopulatingNextRightPointersinEachNodeII.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/subsets_and_recursion/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exercises/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exercises/Demo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/TreeUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/listnode/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/topological_sort/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exercises/Trie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dynamic_programming/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/binary_search/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/sort/MyPriorityQue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/sort/MyPriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestPriorityQueque.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/bits/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/dfs/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/tree/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/kway_merge/FindClosestElements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exercises/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/moore_vote/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/sort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java" />
       </list>
     </option>
   </component>
@@ -134,11 +189,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="315" />
-    <option name="y" value="27" />
-    <option name="width" value="1420" />
-    <option name="height" value="922" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="570" />
+    <option name="y" value="106" />
+    <option name="width" value="1115" />
+    <option name="height" value="895" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,9 +203,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,6 +236,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AlgsTraining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AlgsTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="algs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,7 +253,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="algs" type="462c0819:PsiDirectoryNode" />
-              <item name="bfs" type="462c0819:PsiDirectoryNode" />
+              <item name="backtrack" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AlgsTraining" type="b2602c69:ProjectViewProjectNode" />
@@ -199,24 +261,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="algs" type="462c0819:PsiDirectoryNode" />
+              <item name="moore_vote" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/glorythesky/Documents/github_codes/AlgsTraining/src/main/java/leetcode/algs/listnode/package-info.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../real_projects/分词/hehan自然语言处理入门/code/HanLP" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="utils" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -230,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="CommonJavaCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utils.CommonJavaCode" />
       <module name="algs_traning" />
@@ -242,19 +312,41 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.Demo" />
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithms.sort.MergeSort" />
       <module name="algs_traning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.*" />
+          <option name="PATTERN" value="algorithms.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercises.Test" />
+      <module name="algs_traning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TreeNode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.TreeNode" />
+      <module name="algs_traning" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Trie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Trie" />
       <module name="algs_traning" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -266,29 +358,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TestPriorityQueque.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="algs_traning" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="impl_of_Algorithms_from_Sedgewick.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="impl_of_Algorithms_from_Sedgewick" />
-      <option name="MAIN_CLASS_NAME" value="impl_of_Algorithms_from_Sedgewick.TestPriorityQueque" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -340,16 +409,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.CommonJavaCode" />
-      <item itemvalue="JUnit.TestPriorityQueque.test" />
-      <item itemvalue="Application.Demo" />
       <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TreeNode" />
+      <item itemvalue="Application.Trie" />
+      <item itemvalue="Application.MergeSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Trie" />
+        <item itemvalue="Application.TreeNode" />
         <item itemvalue="Application.CommonJavaCode" />
-        <item itemvalue="Application.Demo" />
-        <item itemvalue="JUnit.TestPriorityQueque.test" />
       </list>
     </recent_temporary>
   </component>
@@ -391,6 +462,73 @@
       <workItem from="1626255353029" duration="6117000" />
       <workItem from="1626308940823" duration="19271000" />
       <workItem from="1626402559757" duration="8267000" />
+      <workItem from="1626496180150" duration="6634000" />
+      <workItem from="1626579480142" duration="8934000" />
+      <workItem from="1626653684429" duration="7599000" />
+      <workItem from="1626774704890" duration="6447000" />
+      <workItem from="1626831325660" duration="5656000" />
+      <workItem from="1626857523848" duration="8284000" />
+      <workItem from="1626917344985" duration="9408000" />
+      <workItem from="1627023370754" duration="3502000" />
+      <workItem from="1627085321429" duration="14150000" />
+      <workItem from="1627170325359" duration="2954000" />
+      <workItem from="1627204172369" duration="8300000" />
+      <workItem from="1627259609999" duration="9445000" />
+      <workItem from="1627344546838" duration="2195000" />
+      <workItem from="1627356276729" duration="3566000" />
+      <workItem from="1627402804459" duration="1021000" />
+      <workItem from="1627404247795" duration="1989000" />
+      <workItem from="1627470132628" duration="5055000" />
+      <workItem from="1627547926647" duration="1450000" />
+      <workItem from="1627549499798" duration="17046000" />
+      <workItem from="1627609965703" duration="8721000" />
+      <workItem from="1627694726700" duration="5721000" />
+      <workItem from="1627831271422" duration="3689000" />
+      <workItem from="1627881237007" duration="4839000" />
+      <workItem from="1627955837837" duration="4055000" />
+      <workItem from="1628165996409" duration="2600000" />
+      <workItem from="1628252753751" duration="978000" />
+      <workItem from="1628256006282" duration="2666000" />
+      <workItem from="1628344811325" duration="117000" />
+      <workItem from="1628431570255" duration="830000" />
+      <workItem from="1628646680193" duration="1716000" />
+      <workItem from="1628905749666" duration="2641000" />
+      <workItem from="1629338077447" duration="8177000" />
+      <workItem from="1629618270536" duration="9747000" />
+      <workItem from="1629676611957" duration="2741000" />
+      <workItem from="1629704826005" duration="6777000" />
+      <workItem from="1629791143570" duration="374000" />
+      <workItem from="1629899105628" duration="479000" />
+      <workItem from="1629943533584" duration="4176000" />
+      <workItem from="1630068346896" duration="102000" />
+      <workItem from="1630121508270" duration="938000" />
+      <workItem from="1630233117973" duration="6160000" />
+      <workItem from="1630285420105" duration="4432000" />
+      <workItem from="1630408791037" duration="243000" />
+      <workItem from="1630479848139" duration="5181000" />
+      <workItem from="1630543049293" duration="6531000" />
+      <workItem from="1630627316347" duration="8495000" />
+      <workItem from="1630644080100" duration="4016000" />
+      <workItem from="1630725578563" duration="3803000" />
+      <workItem from="1630831971334" duration="2385000" />
+      <workItem from="1630930578157" duration="3485000" />
+      <workItem from="1630976407516" duration="2281000" />
+      <workItem from="1631085383371" duration="3427000" />
+      <workItem from="1631148629953" duration="2006000" />
+      <workItem from="1631171868771" duration="7628000" />
+      <workItem from="1631276346306" duration="770000" />
+      <workItem from="1631536324696" duration="1825000" />
+      <workItem from="1631624019784" duration="869000" />
+      <workItem from="1631705536503" duration="1292000" />
+      <workItem from="1631756878995" duration="1985000" />
+      <workItem from="1631865024422" duration="1965000" />
+      <workItem from="1632119205096" duration="1890000" />
+      <workItem from="1634475365957" duration="800000" />
+      <workItem from="1634616237100" duration="2113000" />
+      <workItem from="1635480560438" duration="750000" />
+      <workItem from="1636336409451" duration="1468000" />
+      <workItem from="1636341240556" duration="5577000" />
+      <workItem from="1636946278295" duration="229000" />
     </task>
     <servers />
   </component>
@@ -400,40 +538,40 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143531000" />
+    <option name="totallyTimeSpent" value="420856000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="27" width="1420" height="922" extended-state="0" />
+    <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.27601314" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.3462579" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.16510904" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18158568" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18729463" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986979" visible="true" weight="0.22343522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986979" visible="true" weight="0.18423973" />
       <window_info anchor="right" id="Database" order="3" weight="0.32912534" />
       <window_info id="Structure" order="1" sideWeight="0.50130206" side_tool="true" weight="0.2797619" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24972253" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" sideWeight="0.50130206" side_tool="true" weight="0.2797619" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.28005114" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2935378" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.15329126" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32968238" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.27382258" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,31 +584,25 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exercises/Demo.java</url>
-          <line>11</line>
+          <url>file://$PROJECT_DIR$/src/main/java/exercises/Trie.java</url>
+          <line>69</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exercises/Demo.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exercises/Demo.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/exercises/Test.java</url>
-          <line>24</line>
+          <line>13</line>
           <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/exercises/Test.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="130" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="131" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -478,215 +610,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestPriorityQueque.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/moore_vote/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/greedy/AdvantageCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="16" lean-forward="true" selection-end-line="56" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure_high_level/segment_tree/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/graph/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/DecodeString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure_high_level/segment_tree/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/BestTimeToBuyAndSellStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/HouseRobberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/BestTimeToBuyAndSellStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/HouseRobberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/BestTimeToBuyAndSellStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/HouseRobberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/BestTimeToBuyAndSellStock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/HouseRobberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/KDNode.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure/DEndNode.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure_high_level/BIT/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/data_structure_high_level/segment_tree/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/graph/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/DecodeString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ParseBigJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="62" column="17" lean-forward="true" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="5451" column="71" lean-forward="true" selection-start-line="5451" selection-start-column="71" selection-end-line="5451" selection-end-column="71" />
+        <state relative-caret-position="180">
+          <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -718,24 +645,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestPriorityQueque.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="61" selection-start-line="61" selection-end-line="87" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -767,31 +680,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="129" column="34" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/PopulatingNextRightPointersinEachNodeII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -802,30 +694,265 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java">
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="209">
+          <caret line="475" selection-start-line="475" selection-end-line="475" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Demo.java" />
+    <entry file="jar:///usr/local/jdk1.8.0_241/jre/lib/rt.jar!/sun/nio/cs/UTF_8.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/listnode/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TreeUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/DecodeString.java" />
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="162" column="11" selection-start-line="162" selection-start-column="11" selection-end-line="162" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/UnionFind/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2022">
+          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="306" column="12" selection-start-line="306" selection-start-column="12" selection-end-line="306" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/topological_sort/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="421" selection-start-line="421" selection-end-line="421" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dynamic_programming/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="822">
+          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#568#583#0" expanded="true" />
-            <element signature="e#640#650#0" expanded="true" />
-            <element signature="e#734#743#0" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/topological_sort/TopologicalSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/binary_search/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/sort/MyPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454">
+          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/impl_of_Algorithms_from_Sedgewick/TestMyPriorityQueque.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/FindTargetSumWays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/Subset.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/Permutate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/local/jdk1.8.0_241/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/bits/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/dfs/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/string/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/tree/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/bfs/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="126">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/kway_merge/FindClosestElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="93" column="49" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/moore_vote/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="75" selection-start-line="31" selection-start-column="75" selection-end-line="31" selection-end-column="75" />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * 算法中常见的代码
+ * java中常见的代码
  */
 public class CommonJavaCode {
 
@@ -20,10 +20,15 @@ public class CommonJavaCode {
         /* 排序 */
         Collections.sort(list, Collections.reverseOrder()); // 逆序的话加一个参数就好
         System.out.println(list.toString());
+        // 数组的排序
+        Arrays.sort(new int [3]);
+        Arrays.sort(new Integer [3], Collections.reverseOrder()); // 要降序就得改成Integer才可以 
         
         /* String 转 char */
         String s = "sfsafasf";
         char [] strToChar = s.toCharArray();
+        // char[] 转 String
+        String.valueOf(strToChar);
         
         /* 数组的直接初始化 */
         int [] a = {1,2,3,4};
@@ -43,6 +48,17 @@ public class CommonJavaCode {
         que.offer(3);
         que.poll();
         
+        /* 双端队列 */
+        Deque<Integer> que1 = new LinkedList<Integer>();
+        que1.addFirst(0);
+        que1.addLast(1);
+        
+        /* 栈使用Deque来做其实更加方便、更加灵活 */
+        Deque<Integer> que2 = new ArrayDeque<Integer>();
+        que2.addFirst(2);
+        que2.removeFirst();
+        que2.peekLast();
+        
         /* java List 的拷贝*/
         ArrayList<Integer> list2 = new ArrayList<Integer>();
         // 可以使用clone, 注意clone 只能使Object调用，接口是调用不了的
@@ -58,6 +74,11 @@ public class CommonJavaCode {
         
         /* java中的/**注释该怎么去除？ */
         // 没有快捷键，就用alt + 鼠标纵向选择，再delete即可 
+        
+        
+        Set<Integer> set = new HashSet<Integer>();
+        
+        
     }
     
     

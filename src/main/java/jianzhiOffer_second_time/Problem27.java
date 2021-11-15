@@ -1,6 +1,6 @@
 package jianzhiOffer_second_time;
 
-import exercises.TreeNode;
+import utils.TreeNode;
 
 /**
  * @ClassName Problem27

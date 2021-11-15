@@ -74,7 +74,7 @@ public class FindClosestElements {
                 que.add(arr[p1]);
                 p1--;
                 cnt++;
-                continue;
+                continue; 
             }
         }
         while (!que.isEmpty()) {

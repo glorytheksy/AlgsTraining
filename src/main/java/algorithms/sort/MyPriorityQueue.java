@@ -9,7 +9,7 @@ import java.util.LinkedList;
  * @Date 2017年8月24日 上午9:11:23
  * @version 1.0.0
  */
-public class PriorityQue {
+public class MyPriorityQueue {
 
     // 存储数据数组(第一个元素我们并不使用)
     @SuppressWarnings({"serial" })

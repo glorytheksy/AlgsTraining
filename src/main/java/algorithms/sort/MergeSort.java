@@ -56,34 +56,38 @@ public class MergeSort {
      * @param right
      * @param split
      */
-    private void merge(int [] arr, int [] temp, int left, int right, int split) {                            
-        int i = left;
-        int j = split;
-        int k = left;
-        while (i < split || j < right + 1) {
-            if (split == i) {
-                temp[k] = arr[j++];
-            } else if (right + 1 == j) {
-                temp[k] = arr[i++];
+    private void merge(int [] arr, int [] temp, int left, int right, int split) {
+        // 方法1 一步一步调整
+
+        int lt = left;
+        int rt = split;
+        int pt = left;
+        while (lt < split || rt < right + 1) {
+            if (split == lt) {
+                temp[pt] = arr[rt++];
+            } else if (right + 1 == rt) {
+                temp[pt] = arr[lt++];
             } else {
-                if (arr[i] > arr[j]) {
-                    temp[k] = arr[j++];
+                if (arr[lt] > arr[rt]) {
+                    temp[pt] = arr[rt++];
                 } else {
-                    temp[k] = arr[i++];
+                    temp[pt] = arr[lt++];
                 }
             }
-            k++;
+            pt++;
         }        
-        
-        for (i = left; i <= right; i++) {
-            arr[i] = temp[i];
+        for (lt = left; lt <= right; lt++) {
+            arr[lt] = temp[lt];
         }
+        
+        
+
     }
     
     
     public static void main(String[] args) {
         MergeSort ms = new MergeSort();        
-        int arr[] = new int [] {5,3,2,1,4};
+        int arr[] = new int [] {5,2,3,1,4,54356,456,546,74,567,90};
         int [] rs = ms.mergeSort(arr);
         for (int e : rs) {
             System.out.println(e);
