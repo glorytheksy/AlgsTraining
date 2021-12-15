@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb05eb1-9085-403b-ba00-4626bdb1df0a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/hashmap/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/listnode/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/string/string_match/package-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exercises/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercises/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/MinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/greedy/AdvantageCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/greedy/AdvantageCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/string/LongestPalindromeSubseq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/string/MinDistance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/algs/string/package-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/algs/string/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CommonJavaCode.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+            <state relative-caret-position="252">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="378">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -189,11 +189,11 @@
         <option value="$PROJECT_DIR$/src/main/java/algorithms/sort/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/backtrack/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/listnode/TwoSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exercises/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/hashmap/package-info.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/MinimumWindowSubstring.java" />
         <option value="$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java" />
+        <option value="$PROJECT_DIR$/src/main/java/exercises/Test.java" />
       </list>
     </option>
   </component>
@@ -277,16 +277,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AlgsTraining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgsTraining" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="algs" type="462c0819:PsiDirectoryNode" />
-              <item name="stack" type="462c0819:PsiDirectoryNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -556,7 +547,7 @@
       <workItem from="1638786854764" duration="3401000" />
       <workItem from="1639364838531" duration="5721000" />
       <workItem from="1639445504014" duration="3642000" />
-      <workItem from="1639539708891" duration="1002000" />
+      <workItem from="1639539708891" duration="1084000" />
     </task>
     <servers />
   </component>
@@ -566,7 +557,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="434625000" />
+    <option name="totallyTimeSpent" value="434707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="72" y="27" width="1848" height="1053" extended-state="6" />
@@ -920,16 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/sliding_window/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -967,8 +948,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/leetcode/algs/stack/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="378">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/exercises/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
